@@ -1594,6 +1594,8 @@ a {
 }
 
 .virtues__item-icon {
+  width: 100px;
+  margin: 0px auto 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1608,7 +1610,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 100px;
-  margin-bottom: 20px;
 }
 
 /* - server -------- */
