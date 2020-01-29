@@ -1982,6 +1982,11 @@ a {
   background-color: #6025f6;
 }
 
+.pricing__btn:hover {
+  background-color: #418ce3;
+  color: #fff;
+}
+
 /* - partners -------- */
 .partners {
   text-align: center;
