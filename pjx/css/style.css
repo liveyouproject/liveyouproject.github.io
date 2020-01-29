@@ -994,6 +994,10 @@ select option {
   color: #444;
 }
 
+a {
+  text-decoration: none;
+}
+
 #wrapper {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1272,7 +1276,7 @@ select option {
 .menu-burger--opened .menu-open-wrapper {
   background-color: #6318bf;
   width: 100%;
-  max-width: 370px;
+  max-width: 270px;
 }
 
 .menu-burger--opened .menu-item {
@@ -1312,7 +1316,6 @@ select option {
 }
 
 .menu-item__link:hover {
-  text-decoration: underline;
   color: #fe5e66;
 }
 
@@ -1449,7 +1452,7 @@ select option {
 
 /* - connect -------- */
 .connect {
-  padding: 60px 0px 40px;
+  padding: 80px 0px 40px;
   background-color: #f5fcfe;
 }
 
@@ -1459,6 +1462,10 @@ select option {
 
 .connect__link:focus {
   outline: none;
+}
+
+.connect__link:hover .icon-zoom {
+  opacity: 1;
 }
 
 .connect__img {
@@ -1473,7 +1480,7 @@ select option {
 }
 
 .connect__img .icon-zoom {
-  display: none;
+  opacity: 0;
   width: 63px;
   height: 63px;
   background: url("../img/zoom-icon.png") no-repeat 50% 50%;
@@ -1483,6 +1490,9 @@ select option {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
+  transition: opacity .3s linear;
 }
 
 .connect .slide-arrow {
@@ -1553,7 +1563,7 @@ select option {
 
 /* - virtues -------- */
 .virtues {
-  padding: 60px 0px 40px;
+  padding: 80px 0px 40px;
   text-align: center;
 }
 
@@ -1603,7 +1613,7 @@ select option {
 
 /* - server -------- */
 .server {
-  padding: 40px 0px 60px;
+  padding: 50px 0px 60px;
 }
 
 .server__img {
@@ -1612,7 +1622,7 @@ select option {
 
 /* - search -------- */
 .search {
-  padding: 40px 0px;
+  padding: 80px 0px 60px;
   text-align: center;
   background-color: #efe7f8;
 }
@@ -1695,6 +1705,8 @@ select option {
 }
 
 .search__select select {
+  position: relative;
+  z-index: 2;
   width: 100%;
   padding-right: 20px;
   background: transparent;
@@ -1739,7 +1751,7 @@ select option {
 /* - pricing -------- */
 .pricing {
   text-align: center;
-  padding: 60px 0px;
+  padding: 80px 0px 60px;
 }
 
 .pricing__subtitle {
@@ -1952,7 +1964,7 @@ select option {
   height: 15px;
   position: absolute;
   left: 0px;
-  top: 2px;
+  top: 0px;
   padding: 0px;
 }
 
@@ -1972,7 +1984,7 @@ select option {
 /* - partners -------- */
 .partners {
   text-align: center;
-  padding: 40px 0px;
+  padding: 80px 0px 60px;
   background-color: #ecebf7;
 }
 
@@ -2044,7 +2056,7 @@ select option {
 /* - blog -------- */
 .blog {
   text-align: center;
-  padding: 60px 0px;
+  padding: 80px 0px 60px;
 }
 
 .blog__title {
@@ -2340,7 +2352,7 @@ select option {
     display: block;
   }
   .connect__img .icon-zoom {
-    display: block;
+    opacity: 0;
   }
   .virtues__wrap {
     display: -webkit-box;
@@ -2353,6 +2365,21 @@ select option {
   .virtues__item {
     margin-left: 2%;
     width: 48%;
+  }
+  .search__form-inner input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .search__form-inner input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .search__form-inner input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .search__form-inner input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .search__form-inner input::placeholder {
+    font-size: 16px;
   }
   .search__form-buttons {
     margin-left: 0px;
@@ -2664,7 +2691,6 @@ select option {
   }
   .active .menu-item__link,
   .menu-item__link:hover {
-    text-decoration: underline;
     color: #fe5e66;
   }
   .sticky {

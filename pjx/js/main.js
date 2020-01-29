@@ -4,6 +4,11 @@ $(function(){
   // $(".mask-phone").mask("+7 (999) 999-99-99");
 
   // add-open-class
+  $('.menu-item__link').click(function(){
+    $('.head-menu').removeClass('menu-burger--opened');
+     $('body').removeClass('menu-open-wrapper-page');
+  });
+
   $('.burger-menu').click(function(){
    if($(this).parent().is('.menu-burger--opened')){
      $(this).parent().removeClass('menu-burger--opened');
@@ -55,6 +60,13 @@ $(function(){
     $('.fixed-panel-nav').removeClass("sticky");
   }
   });
+  //menu
+  $("a.menu-item__link").click(function () {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
+    return false;
+});
   // price checkboxes
   var priceBlock = document.querySelector('.pricing__wrap');
 
