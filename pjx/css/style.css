@@ -1276,7 +1276,7 @@ a {
 .menu-burger--opened .menu-open-wrapper {
   background-color: #6318bf;
   width: 100%;
-  max-width: 270px;
+  max-width: 330px;
 }
 
 .menu-burger--opened .menu-item {
