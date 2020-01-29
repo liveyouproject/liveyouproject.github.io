@@ -2699,15 +2699,6 @@ a {
   .menu-item__link:hover {
     color: #fe5e66;
   }
-  .sticky {
-    padding: 95px 0px 0px;
-  }
-  .header {
-    height: 95px;
-  }
-  .header .logo {
-    max-width: 150px;
-  }
   .banner {
     min-height: 760px;
     padding: 90px 0px;
@@ -2989,16 +2980,6 @@ a {
   .menu .menu-item__link {
     display: block;
     padding: 10px 21px;
-  }
-  .sticky {
-    padding: 105px 0px 0px;
-  }
-  .header {
-    height: 105px;
-    padding: 0px;
-  }
-  .header .logo {
-    max-width: 190px;
   }
   .connect {
     padding: 150px 0px 100px;
