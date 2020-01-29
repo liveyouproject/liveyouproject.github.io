@@ -1152,7 +1152,7 @@ a {
   display: block;
   position: absolute;
   right: 5px;
-  top: 21px;
+  top: 11px;
   z-index: 101;
   cursor: pointer;
   padding: 10px;
@@ -1338,9 +1338,9 @@ a {
 
 /* - header -------- */
 .header {
+  height: 60px;
   position: relative;
-  height: 80px;
-  padding: 10px 0px;
+  padding: 5px 0px;
   background-color: #6318bf;
   z-index: 10;
   left: 0px;
@@ -1360,7 +1360,7 @@ a {
 }
 
 .header .logo {
-  max-width: 100px;
+  max-width: 80px;
 }
 
 .header .logo a {
@@ -1368,7 +1368,7 @@ a {
 }
 
 .sticky {
-  padding: 80px 0px 0px;
+  padding: 60px 0px 0px;
 }
 
 .sticky .header {
@@ -2343,17 +2343,16 @@ a {
     display: none;
   }
   .burger-menu {
-    top: 29px;
+    top: 12px;
   }
   .sticky {
-    padding: 95px 0px 0px;
+    padding: 70px 0px 0px;
   }
   .header {
-    padding: 5px 0px;
-    height: 95px;
+    height: 70px;
   }
   .header .logo {
-    max-width: 150px;
+    max-width: 100px;
   }
   .connect .slide-arrow {
     display: block;
@@ -2701,14 +2700,13 @@ a {
     color: #fe5e66;
   }
   .sticky {
-    padding: 119px 0px 0px;
+    padding: 95px 0px 0px;
   }
   .header {
-    height: 119px;
-    padding: 5px 0px;
+    height: 95px;
   }
   .header .logo {
-    max-width: 196px;
+    max-width: 150px;
   }
   .banner {
     min-height: 760px;
@@ -2991,6 +2989,16 @@ a {
   .menu .menu-item__link {
     display: block;
     padding: 10px 21px;
+  }
+  .sticky {
+    padding: 105px 0px 0px;
+  }
+  .header {
+    height: 105px;
+    padding: 0px;
+  }
+  .header .logo {
+    max-width: 190px;
   }
   .connect {
     padding: 150px 0px 100px;
