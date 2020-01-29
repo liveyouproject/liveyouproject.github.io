@@ -2699,6 +2699,21 @@ a {
   .menu-item__link:hover {
     color: #fe5e66;
   }
+  .sticky {
+    padding: 100px 0px 0px;
+  }
+  .sticky .header {
+    height: 75px;
+  }
+  .sticky .header .logo {
+    max-width: 100px;
+  }
+  .header {
+    height: 100px;
+  }
+  .header .logo {
+    max-width: 160px;
+  }
   .banner {
     min-height: 760px;
     padding: 90px 0px;
@@ -2980,6 +2995,21 @@ a {
   .menu .menu-item__link {
     display: block;
     padding: 10px 21px;
+  }
+  .sticky {
+    padding: 115px 0px 0px;
+  }
+  .sticky .header {
+    height: 75px;
+  }
+  .sticky .header .logo {
+    max-width: 100px;
+  }
+  .header {
+    height: 115px;
+  }
+  .header .logo {
+    max-width: 190px;
   }
   .connect {
     padding: 150px 0px 100px;
