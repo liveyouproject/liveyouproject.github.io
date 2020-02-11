@@ -941,8 +941,8 @@ button.mfp-arrow {
     background: #000; }
 
 .mfp-content {
-    
-    padding: 40px;
+    width: 80%;
+    height: 768px;
     max-height: 100%;
 }
 
