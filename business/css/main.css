@@ -821,12 +821,13 @@ html.fp-enabled,
 
 .mfp-auto-cursor .mfp-content {
   cursor: auto; }
-
 .mfp-close, .mfp-arrow, .mfp-preloader, .mfp-counter {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none; }
-
+.mfp-counter {
+  display: none;
+}
 .mfp-loading.mfp-figure {
   display: none; }
 
@@ -869,7 +870,18 @@ button.mfp-close, button.mfp-arrow {
 button::-moz-focus-inner {
   padding: 0;
   border: 0; }
-
+button.mfp-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  border-style: solid;
+  border-width: 40px 40px 40px 0;
+  border-color: transparent #9c9c9c transparent transparent;
+}
+.mfp-arrow-right {
+  transform: scale(-1, 1);
+  right: 15px;
+}
 .mfp-close {
   width: 44px;
   height: 44px;
@@ -1826,9 +1838,9 @@ html, body {
  .project-slider__item {
   text-align: center;
   margin-left: 10px;
-
  }
  .project-slider__item-img {
+  display: block;
   height: 247px;
   overflow: hidden;
   cursor: pointer;
@@ -1906,6 +1918,7 @@ html, body {
   display: inline-block;
   object-fit: cover;
   height: 100%;
+  width: 100%;
   
 }
 .project-slider__video-link:before {
@@ -2498,6 +2511,8 @@ fabrication
   color: #5e5e5e;
   border-radius: 0;
   border: none;
+  height: 100%;
+  background: transparent;
  }
  .pop-up-form__input input::placeholder {
   color: #5e5e5e;
@@ -2920,7 +2935,8 @@ fabrication
  }
  .sell-content {
   width: 50%;
-  padding-left: 50px;
+  margin-left: 50px;
+  padding-left: 0px;
   padding-top: 74px;
  }
  .sell-slider .slide-next,
@@ -3300,7 +3316,8 @@ fabrication
   }
   
 .sell-content {
-  padding-left: 40px;
+  padding-left: 0px;
+  margin-left: 50px;
 }
 .sell-slider .slide-prev {
   left: 50px;
@@ -3401,6 +3418,7 @@ fabrication
   position: absolute;
   left: 409px;
   top: 22px;
+  opacity: 0.5;
  }
  .fabrication-tabs li.current:before {
   display: block;
@@ -3418,7 +3436,7 @@ fabrication
  }
  .fabrication-tabs li:nth-child(3):after {
   transform: translateY(0.3px);
-  top: 22.4px;
+  top: 21.9px;
   left: 290.4px;
  }
  .fabrication-tabs li:nth-child(4):before {

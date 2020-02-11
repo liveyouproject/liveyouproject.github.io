@@ -35,7 +35,7 @@ jQuery(function($){
 
 
 
-  $(".mask-phone").mask("+7 (999) 999-99-99");
+  //$(".mask-phone").mask("+7 (999) 999-99-99");
 
   $('.sell-slider').slick({
   slidesToShow: 1,
@@ -103,27 +103,32 @@ $('.project-box').slick({
 
 $('.fabrication__slider__link').magnificPopup({
       type: 'image',
+      closeOnContentClick: true,
+      gallery: {
+        enabled: true
+      }
+    });
+$('.project-slider__item-img').magnificPopup({
+      type: 'image',
       closeOnContentClick: true
     });
-
 $('.popup-youtube').magnificPopup({
     type: 'iframe',
     mainClass: 'mfp-fade',
     removalDelay: 160,
     preloader: false,
-
     fixedContentPos: false
 });
 $('.pop-up-close').click(function(){
     $.magnificPopup.close();
 });
 $('.project-slider__video-link').magnificPopup({
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: false,
-
-    fixedContentPos: false
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
 });
 //form submission
   $("form").submit(function() {
