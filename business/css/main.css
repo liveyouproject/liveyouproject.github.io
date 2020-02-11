@@ -942,12 +942,11 @@ button.mfp-arrow {
 
 .mfp-content {
     width: 80%;
-    height: 768px;
     max-height: 100%;
 }
-
 /* The shadow behind the image */
 .mfp-figure {
+  text-align: center;
   line-height: 0; }
   .mfp-figure:after {
     content: '';

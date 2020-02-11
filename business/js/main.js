@@ -109,8 +109,7 @@ $('.fabrication__slider__link').magnificPopup({
       }
     });
 $('.project-slider__item-img').magnificPopup({
-      type: 'image',
-      closeOnContentClick: true
+      type: 'image'
     });
 $('.popup-youtube').magnificPopup({
     type: 'iframe',
