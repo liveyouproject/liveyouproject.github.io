@@ -102,6 +102,7 @@ $('.project-box').slick({
     });
 
 $('.fabrication__slider__link').magnificPopup({
+      closeBtnInside: false,
       type: 'image',
       closeOnContentClick: true,
       gallery: {
@@ -109,7 +110,11 @@ $('.fabrication__slider__link').magnificPopup({
       }
     });
 $('.project-slider__item-img').magnificPopup({
-      type: 'image'
+      closeBtnInside: false,
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
     });
 $('.popup-youtube').magnificPopup({
     type: 'iframe',

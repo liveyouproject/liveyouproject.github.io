@@ -875,7 +875,7 @@ button.mfp-arrow {
   top: 50%;
   margin-top: -40px;
   border-style: solid;
-  border-width: 40px 40px 40px 0;
+  border-width: 40px 25px 40px 0;
   border-color: transparent #9c9c9c transparent transparent;
 }
 .mfp-arrow-right {
@@ -2507,6 +2507,7 @@ fabrication
    background: #fff url(../img/phone-dark.svg) no-repeat 10px center;
  }
  .pop-up-form__input input {
+  padding: 15px 0px;
   color: #5e5e5e;
   border-radius: 0;
   border: none;
