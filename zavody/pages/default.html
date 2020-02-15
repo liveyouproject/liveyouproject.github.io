@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header></header>
+		<section class="section">
+			<div class="container">
+				<span class="title-h2">bread-crumbs</span>
+				<ul class="breadCrumbs">
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Кондитерские фабрики</a>
+					</li>
+					<li>Предприятия Краснодара</li>
+				</ul>
+			</div>
+		</section>
+		<section class="section">
+			<div class="container">
+				<span class="title-h2">
+					Pagination
+				</span>
+				<ul class="pagination">
+					<ul>
+						<li>
+							<a href="#">1</a>
+						</li>
+						<li class="pagination__active">
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+						<li>
+							<a href="#">4</a>
+						</li>
+						<li class="pagination__next">
+							<a href="#">
+								<svg class="icon">
+									<use xlink:href="../img/svg/sprite.svg#double-right-arrow-icon"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</ul>
+			</div>
+		</section class="section">
+		<section>
+			<div class="container">
+				<span class="title-h2">Buttons</span>
+				<a href="#" class="btn">btn</a>
+				<br>
+				<!-- <a href="#" class="btn btn_full-width">
+					btn_full-width
+				</a> -->
+			</div>
+		</section>
+		<section class="section">
+			<div class="container">
+				<span class="title-h2">Form</span>
+				<input type="text">
+				<select name="" id="">
+						<option value="">Регион</option>
+						<option value="">Регион</option>
+						<option value="">Регион</option>
+						<option value="">Регион</option>
+					</select>
+					<select name="" id="" disabled="disabled">
+						<option value="">Регион</option>
+						<option value="">Регион</option>
+						<option value="">Регион</option>
+						<option value="">Регион</option>
+					</select>
+					<input type="file">
+				<form action="" class="form">
+					<div class="form__input">
+						<input type="text" placeholder="Название">
+					</div>
+					<label for="export-checkbox" class="form__checkbox">
+						<input type="checkbox" id="export-checkbox">
+						Экспортер
+					</label>
+					<select name="" id="" class="form__select">
+						<option value="">Регион</option>
+						<option value="">Регион</option>
+						<option value="">Регион</option>
+						<option value="">Регион</option>
+					</select>
+					<select name="" id="" class="form__select" disabled="disabled">
+						<option value="">Город</option>
+						<option value="">Город</option>
+						<option value="">Город</option>
+						<option value="">Город</option>
+					</select>
+					<select name="" id="" class="form__select">
+						<option value="">Отрасль</option>
+						<option value="">Отрасль</option>
+						<option value="">Отрасль</option>
+						<option value="">Отрасль</option>
+					</select>
+					<select name="" id="" class="form__select" disabled="disabled">
+						<option value="">Вид</option>
+						<option value="">Вид</option>
+						<option value="">Вид</option>
+						<option value="">Вид</option>
+					</select>
+					<div class="form__btn-wrap">
+						<a href="#" class="btn">Найти</a>
+						<a href="#" class="form__reset">
+							<span class="icon">
+								<svg>
+									<use xlink:href="../img/svg/sprite.svg#close-icon"></use>
+								</svg>
+							</span>Сбросить фильтры</a>
+					</div>
+				</form>
+				<form action="" class="filter">
+					<span class="filter__title">Фильтр</span>
+					<select name="" id="">
+						<option value="">Отрасль промышленности</option>
+						<option value="">Отрасль промышленности</option>
+						<option value="">Отрасль промышленности</option>
+						<option value="">Отрасль промышленности</option>
+					</select>
+					<select name="" id="">
+						<option value="">Вид</option>
+						<option value="">Вид</option>
+						<option value="">Вид</option>
+						<option value="">Вид</option>
+					</select>
+					<div class="btn-wrap">
+						<a href="#" class="btn">Применить</a>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="section">
+			<div class="container">
+				<span class="title-h2">
+					blocks
+				</span>
+				<div class="factory">
+					<div class="factory__head">
+						<div class="factory__img">
+							<img src="" alt="">
+						</div>
+						<div class="factory__head-txt">
+							<a href="#" class="factory__title">Казанский ювелирный завод (Кулон)</a>
+							<span class="factory__info">
+								<img src="../img/svg/check-icon.svg" alt="" class="icon">
+								Экспортер
+							</span>
+							<span class="factory__close">
+								<img src="../img/svg/lock-icon.svg" alt="" class="icon">
+								Закрыто навсегда
+							</span>
+						</div>
+					</div>
+						<p>Основная продукция: ювелирные изделия</p>
+						<ul class="factory__category">
+							<li>
+								<a href="#">Прочие промышленные производства</a>
+							</li>
+							<li>
+								<a href="#">Ювелирные заводы</a>
+							</li>
+						</ul>
+				</div>
+				<div class="aside-list">
+					<span class="title-h3">
+						Другие города
+					</span>
+					<ul>
+						<li>
+							<a href="#">Альметьевск</a>
+						</li>
+						<li>
+							<a href="#">Арск</a>
+						</li>
+						<li>
+							<a href="#">Бугульма</a>
+						</li>
+						<li>
+							<a href="#">Буинск</a>
+						</li>
+						<li>
+							<a href="#">Заинск</a>
+						</li>
+						<li>
+							<a href="#">Зеленодольск</a>
+						</li>
+						<li>
+							<a href="#">Лениногорск</a>
+						</li>
+						<li>
+							<a href="#">Набережные челны</a>
+						</li>
+					</ul>
+					<a href="#" class="aside-list__footer">
+						Рубрикатор
+						<svg class="icon">
+							<use xlink:href="../img/svg/sprite.svg#sitemap-icon"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="product">
+				<span class="title-h2">Продукция</span>
+				<div class="product__wrap">
+					<div class="product__item">
+						<div class="product__img">
+							<img src="../img/product-img.jpg" alt="">
+						</div>
+						<p>Мармелад с облепихой</p>
+					</div>
+					<div class="product__item">
+						<div class="product__img">
+							<img src="../img/product-img2.jpg" alt="">
+						</div>
+						<p>Весовая халва</p>
+					</div>
+					<div class="product__item">
+						<div class="product__img">
+							<img src="../img/product-img3.jpg" alt="">
+						</div>
+						<p>Халва кунжутная счастье внутри, 05</p>
+					</div>
+					<div class="product__item">
+						<div class="product__img">
+							<img src="" alt="">
+						</div>
+						<p>Халвинки подсолнечные</p>
+					</div>
+				</div>
+				<div class="product__footer">
+					<a href="#" class="btn">Все продукты</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="publications">
+				<span class="title-h2">Публикации</span>
+				<div class="publications__wrap">
+					<div class="publications__item">
+						<span class="publications__title">Статья</span>
+						<p>Программа «Экспортеры 2.0» помогла российской компании заключить 11 экспортных контрактов в области ...</p>
+						<span class="publications__date">
+							31 января, 02:00
+						</span>
+					</div>
+					<div class="publications__item">
+						<span class="publications__title">Новость</span>
+						<p>Татнефть успешно отработала 2019 г. и строит планы на будущее, в т.ч. глобальные</p>
+						<span class="publications__date">
+							31 января, 17:40
+						</span>
+					</div>
+					<div class="publications__item">
+						<span class="publications__title">Статья</span>
+						<p>Об инвестициях в новые технологии и их эффектах для бизнеса</p>
+						<span class="publications__date">
+							31 января, 17:40
+						</span>
+					</div>
+					<div class="publications__item">
+						<span class="publications__title">Новость</span>
+						<p>ЛУКОЙЛ-Инжиниринг: инновационный подход к геологоразведке и добыче</p>
+						<span class="publications__date">
+							30 января, 17:40
+						</span>
+					</div>
+					<div class="publications__item">
+						<span class="publications__title">Новость</span>
+						<p>Об инвестициях в новые технологии и их эффектах для бизнеса</p>
+						<span class="publications__date">
+							31 января, 17:40
+						</span>
+					</div>
+					<div class="publications__item">
+						<span class="publications__title">Новость</span>
+						<p>Об инвестициях в новые технологии и их эффектах для бизнеса</p>
+						<span class="publications__date">
+							31 января, 17:40
+						</span>
+					</div>
+				</div>
+				<div class="publications__footer">
+					<a href="#" class="btn">Все публикации</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="posts">
+				<div class="posts__wrap">
+					<div class="posts__item">
+						<span class="posts__title">Статья</span>
+						<a href="#" class="posts__img">
+							<img src="../img/post-img1.jpg" alt="">
+						</a>
+						<a href="#" class="posts__link">
+							Создание в ЕАЭС единого перестраховщика поможет развитию экспорта в третьи страны
+						</a>
+					</div>
+					<div class="posts__item">
+						<span class="posts__title">Статья</span>
+						<a href="#" class="posts__img">
+							<img src="../img/post-img2.jpg" alt="">
+						</a>
+						<a href="#" class="posts__link">
+							На форуме «Сделано в России» обсудят транспортные решения для развития экспорта
+						</a>
+					</div>
+					<div class="posts__item">
+						<span class="posts__title">Новость</span>
+						<a href="#" class="posts__img">
+							<img src="../img/post-img3.jpg" alt="">
+						</a>
+						<a href="#" class="posts__link">
+							РЭЦ и «Норникель» расширяют партнерство
+						</a>
+					</div>
+					<div class="posts__item">
+						<span class="posts__title">Новость</span>
+						<a href="#" class="posts__img">
+							<img src="../img/post-img1.jpg" alt="">
+						</a>
+						<a href="#" class="posts__link">
+							Лучшие экспортеры Дальнего Востока награждены на ВЭФ
+						</a>
+					</div>
+					<div class="posts__item">
+						<span class="posts__title">Опрос</span>
+						<a href="#" class="posts__img">
+							<img src="../img/post-img4.jpg" alt="">
+						</a>
+						<a href="#" class="posts__link">
+							РЭЦ организует деловую миссию российского бизнеса в Финляндию
+						</a>
+					</div>
+					<div class="posts__item">
+						<span class="posts__title">Интервью</span>
+						<a href="#" class="posts__img">
+							<img src="../img/post-img5.jpg" alt="">
+						</a>
+						<a href="#" class="posts__link">
+							Машиностроительный завод BONUM примет участие в 10-й международной промышленной выставке «ИННОПРОМ» в ...
+						</a>
+					</div>
+					<div class="posts__item">
+						<span class="posts__title">Статья</span>
+						<a href="#" class="posts__img">
+							<img src="../img/post-img6.jpg" alt="">
+						</a>
+						<a href="#" class="posts__link">
+							Made in Russia в Китае: контент – ключевая область сотрудничества
+						</a>
+					</div>
+					<div class="posts__item">
+						<span class="posts__title">Новость</span>
+						<a href="#" class="posts__img">
+							<img src="../img/post-img1.jpg" alt="">
+						</a>
+						<a href="#" class="posts__link">
+							Лучшие экспортеры Дальнего Востока награждены на ВЭФ
+						</a>
+					</div>
+					<div class="posts__item">
+						<span class="posts__title">Статья</span>
+						<a href="#" class="posts__img">
+							<img src="../img/post-img1.jpg" alt="">
+						</a>
+						<a href="#" class="posts__link">
+							Создание в ЕАЭС единого перестраховщика поможет развитию экспорта в третьи страны
+						</a>
+					</div>
+					<div class="posts__item">
+						<span class="posts__title">Статья</span>
+						<a href="#" class="posts__img">
+							<img src="../img/post-img2.jpg" alt="">
+						</a>
+						<a href="#" class="posts__link">
+							На форуме «Сделано в России» обсудят транспортные решения для развития экспорта
+						</a>
+					</div>
+					<div class="posts__item">
+						<span class="posts__title">Новость</span>
+						<a href="#" class="posts__img">
+							<img src="../img/post-img3.jpg" alt="">
+						</a>
+						<a href="#" class="posts__link">
+							РЭЦ и «Норникель» расширяют партнерство
+						</a>
+					</div>
+					<div class="posts__item">
+						<span class="posts__title">Новость</span>
+						<a href="#" class="posts__img">
+							<img src="../img/post-img1.jpg" alt="">
+						</a>
+						<a href="#" class="posts__link">
+							Лучшие экспортеры Дальнего Востока награждены на ВЭФ
+						</a>
+					</div>
+					<div class="posts__item">
+						<span class="posts__title">Опрос</span>
+						<a href="#" class="posts__img">
+							<img src="../img/post-img4.jpg" alt="">
+						</a>
+						<a href="#" class="posts__link">
+							РЭЦ организует деловую миссию российского бизнеса в Финляндию
+						</a>
+					</div>
+					<div class="posts__item">
+						<span class="posts__title">Интервью</span>
+						<a href="#" class="posts__img">
+							<img src="../img/post-img5.jpg" alt="">
+						</a>
+						<a href="#" class="posts__link">
+							Машиностроительный завод BONUM примет участие в 10-й международной промышленной выставке «ИННОПРОМ» в ...
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="goods">
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img1.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Рис шлифованный круглозерный</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">«МАКФА»</a>
+					</div>
+					<a href="#" class="goods__review">
+						62 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img2.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Мороженое пломбир крем-брюле</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">АО «ДАКГОМЗ»</a>
+					</div>
+					<a href="#" class="goods__review">
+						24 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img3.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Светодиодная продукция светильники, прожекторы, лампы</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">«VARTON»</a>
+					</div>
+					<a href="#" class="goods__review">
+						62 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img4.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Куртка «Барс»</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">АО «ДАКГОМЗ»</a>
+					</div>
+					<a href="#" class="goods__review">
+						24 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img5.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Металлоформы для труб микротоннелирования</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">Производитель «М-Конструктор» (ИП Багнюк В.Н.)</a>
+					</div>
+					<a href="#" class="goods__review">
+						62 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img6.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Мороженое пломбир крем-брюле</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">АО «ДАКГОМЗ»</a>
+					</div>
+					<a href="#" class="goods__review">
+						24 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img7.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Антенна BAS-2301 WiFi</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">«VARTON»</a>
+					</div>
+					<a href="#" class="goods__review">
+						62 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img8.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Семена сои сорт Аванта</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">АО «ДАКГОМЗ»</a>
+					</div>
+					<a href="#" class="goods__review">
+						24 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img1.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Рис шлифованный круглозерный</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">«МАКФА»</a>
+					</div>
+					<a href="#" class="goods__review">
+						62 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img2.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Мороженое пломбир крем-брюле</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">АО «ДАКГОМЗ»</a>
+					</div>
+					<a href="#" class="goods__review">
+						24 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img3.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Светодиодная продукция светильники, прожекторы, лампы</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">«VARTON»</a>
+					</div>
+					<a href="#" class="goods__review">
+						62 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img4.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Куртка «Барс»</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">АО «ДАКГОМЗ»</a>
+					</div>
+					<a href="#" class="goods__review">
+						24 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img5.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Металлоформы для труб микротоннелирования</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">Производитель «М-Конструктор» (ИП Багнюк В.Н.)</a>
+					</div>
+					<a href="#" class="goods__review">
+						62 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img6.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Мороженое пломбир крем-брюле</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">АО «ДАКГОМЗ»</a>
+					</div>
+					<a href="#" class="goods__review">
+						24 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img7.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Антенна BAS-2301 WiFi</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">«VARTON»</a>
+					</div>
+					<a href="#" class="goods__review">
+						62 отзыва 
+					</a>
+				</div>
+				<div class="goods__item">
+					<a class="goods__img">
+						<img src="../img/goods-img8.png" alt="">
+					</a>
+					<a href="#" class="goods__title">Семена сои сорт Аванта</a>
+					<div class="goods__maker">
+						Производитель
+						<a href="#">АО «ДАКГОМЗ»</a>
+					</div>
+					<a href="#" class="goods__review">
+						24 отзыва 
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<footer>
+	<div class="container"></div>
+</footer>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/libs.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>
