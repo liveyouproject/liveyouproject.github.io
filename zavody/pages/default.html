@@ -1,664 +1,1058 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-	<div id="wrapper">
-		<header></header>
-		<section class="section">
-			<div class="container">
-				<span class="title-h2">bread-crumbs</span>
-				<ul class="breadCrumbs">
-					<li>
-						<a href="#">Главная</a>
-					</li>
-					<li>
-						<a href="#">Кондитерские фабрики</a>
-					</li>
-					<li>Предприятия Краснодара</li>
-				</ul>
-			</div>
-		</section>
-		<section class="section">
-			<div class="container">
-				<span class="title-h2">
-					Pagination
-				</span>
-				<ul class="pagination">
-					<ul>
-						<li>
-							<a href="#">1</a>
-						</li>
-						<li class="pagination__active">
-							<a href="#">2</a>
-						</li>
-						<li>
-							<a href="#">3</a>
-						</li>
-						<li>
-							<a href="#">4</a>
-						</li>
-						<li class="pagination__next">
-							<a href="#">
-								<svg class="icon">
-									<use xlink:href="../img/svg/sprite.svg#double-right-arrow-icon"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</ul>
-			</div>
-		</section class="section">
-		<section>
-			<div class="container">
-				<span class="title-h2">Buttons</span>
-				<a href="#" class="btn">btn</a>
-				<br>
-				<!-- <a href="#" class="btn btn_full-width">
-					btn_full-width
-				</a> -->
-			</div>
-		</section>
-		<section class="section">
-			<div class="container">
-				<span class="title-h2">Form</span>
-				<input type="text">
-				<select name="" id="">
-						<option value="">Регион</option>
-						<option value="">Регион</option>
-						<option value="">Регион</option>
-						<option value="">Регион</option>
-					</select>
-					<select name="" id="" disabled="disabled">
-						<option value="">Регион</option>
-						<option value="">Регион</option>
-						<option value="">Регион</option>
-						<option value="">Регион</option>
-					</select>
-					<input type="file">
-				<form action="" class="form">
-					<div class="form__input">
-						<input type="text" placeholder="Название">
-					</div>
-					<label for="export-checkbox" class="form__checkbox">
-						<input type="checkbox" id="export-checkbox">
-						Экспортер
-					</label>
-					<select name="" id="" class="form__select">
-						<option value="">Регион</option>
-						<option value="">Регион</option>
-						<option value="">Регион</option>
-						<option value="">Регион</option>
-					</select>
-					<select name="" id="" class="form__select" disabled="disabled">
-						<option value="">Город</option>
-						<option value="">Город</option>
-						<option value="">Город</option>
-						<option value="">Город</option>
-					</select>
-					<select name="" id="" class="form__select">
-						<option value="">Отрасль</option>
-						<option value="">Отрасль</option>
-						<option value="">Отрасль</option>
-						<option value="">Отрасль</option>
-					</select>
-					<select name="" id="" class="form__select" disabled="disabled">
-						<option value="">Вид</option>
-						<option value="">Вид</option>
-						<option value="">Вид</option>
-						<option value="">Вид</option>
-					</select>
-					<div class="form__btn-wrap">
-						<a href="#" class="btn">Найти</a>
-						<a href="#" class="form__reset">
-							<span class="icon">
-								<svg>
-									<use xlink:href="../img/svg/sprite.svg#close-icon"></use>
-								</svg>
-							</span>Сбросить фильтры</a>
-					</div>
-				</form>
-				<form action="" class="filter">
-					<span class="filter__title">Фильтр</span>
-					<select name="" id="">
-						<option value="">Отрасль промышленности</option>
-						<option value="">Отрасль промышленности</option>
-						<option value="">Отрасль промышленности</option>
-						<option value="">Отрасль промышленности</option>
-					</select>
-					<select name="" id="">
-						<option value="">Вид</option>
-						<option value="">Вид</option>
-						<option value="">Вид</option>
-						<option value="">Вид</option>
-					</select>
-					<div class="btn-wrap">
-						<a href="#" class="btn">Применить</a>
-					</div>
-				</form>
-			</div>
-		</section>
-		<section class="section">
-			<div class="container">
-				<span class="title-h2">
-					blocks
-				</span>
-				<div class="factory">
-					<div class="factory__head">
-						<div class="factory__img">
-							<img src="" alt="">
-						</div>
-						<div class="factory__head-txt">
-							<a href="#" class="factory__title">Казанский ювелирный завод (Кулон)</a>
-							<span class="factory__info">
-								<img src="../img/svg/check-icon.svg" alt="" class="icon">
-								Экспортер
-							</span>
-							<span class="factory__close">
-								<img src="../img/svg/lock-icon.svg" alt="" class="icon">
-								Закрыто навсегда
-							</span>
-						</div>
-					</div>
-						<p>Основная продукция: ювелирные изделия</p>
-						<ul class="factory__category">
-							<li>
-								<a href="#">Прочие промышленные производства</a>
-							</li>
-							<li>
-								<a href="#">Ювелирные заводы</a>
-							</li>
-						</ul>
-				</div>
-				<div class="aside-list">
-					<span class="title-h3">
-						Другие города
-					</span>
-					<ul>
-						<li>
-							<a href="#">Альметьевск</a>
-						</li>
-						<li>
-							<a href="#">Арск</a>
-						</li>
-						<li>
-							<a href="#">Бугульма</a>
-						</li>
-						<li>
-							<a href="#">Буинск</a>
-						</li>
-						<li>
-							<a href="#">Заинск</a>
-						</li>
-						<li>
-							<a href="#">Зеленодольск</a>
-						</li>
-						<li>
-							<a href="#">Лениногорск</a>
-						</li>
-						<li>
-							<a href="#">Набережные челны</a>
-						</li>
-					</ul>
-					<a href="#" class="aside-list__footer">
-						Рубрикатор
-						<svg class="icon">
-							<use xlink:href="../img/svg/sprite.svg#sitemap-icon"></use>
-						</svg>
-					</a>
-				</div>
-			</div>
-	</section>
-	<section class="section">
-		<div class="container">
-			<div class="product">
-				<span class="title-h2">Продукция</span>
-				<div class="product__wrap">
-					<div class="product__item">
-						<div class="product__img">
-							<img src="../img/product-img.jpg" alt="">
-						</div>
-						<p>Мармелад с облепихой</p>
-					</div>
-					<div class="product__item">
-						<div class="product__img">
-							<img src="../img/product-img2.jpg" alt="">
-						</div>
-						<p>Весовая халва</p>
-					</div>
-					<div class="product__item">
-						<div class="product__img">
-							<img src="../img/product-img3.jpg" alt="">
-						</div>
-						<p>Халва кунжутная счастье внутри, 05</p>
-					</div>
-					<div class="product__item">
-						<div class="product__img">
-							<img src="" alt="">
-						</div>
-						<p>Халвинки подсолнечные</p>
-					</div>
-				</div>
-				<div class="product__footer">
-					<a href="#" class="btn">Все продукты</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section">
-		<div class="container">
-			<div class="publications">
-				<span class="title-h2">Публикации</span>
-				<div class="publications__wrap">
-					<div class="publications__item">
-						<span class="publications__title">Статья</span>
-						<p>Программа «Экспортеры 2.0» помогла российской компании заключить 11 экспортных контрактов в области ...</p>
-						<span class="publications__date">
-							31 января, 02:00
-						</span>
-					</div>
-					<div class="publications__item">
-						<span class="publications__title">Новость</span>
-						<p>Татнефть успешно отработала 2019 г. и строит планы на будущее, в т.ч. глобальные</p>
-						<span class="publications__date">
-							31 января, 17:40
-						</span>
-					</div>
-					<div class="publications__item">
-						<span class="publications__title">Статья</span>
-						<p>Об инвестициях в новые технологии и их эффектах для бизнеса</p>
-						<span class="publications__date">
-							31 января, 17:40
-						</span>
-					</div>
-					<div class="publications__item">
-						<span class="publications__title">Новость</span>
-						<p>ЛУКОЙЛ-Инжиниринг: инновационный подход к геологоразведке и добыче</p>
-						<span class="publications__date">
-							30 января, 17:40
-						</span>
-					</div>
-					<div class="publications__item">
-						<span class="publications__title">Новость</span>
-						<p>Об инвестициях в новые технологии и их эффектах для бизнеса</p>
-						<span class="publications__date">
-							31 января, 17:40
-						</span>
-					</div>
-					<div class="publications__item">
-						<span class="publications__title">Новость</span>
-						<p>Об инвестициях в новые технологии и их эффектах для бизнеса</p>
-						<span class="publications__date">
-							31 января, 17:40
-						</span>
-					</div>
-				</div>
-				<div class="publications__footer">
-					<a href="#" class="btn">Все публикации</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section">
-		<div class="container">
-			<div class="posts">
-				<div class="posts__wrap">
-					<div class="posts__item">
-						<span class="posts__title">Статья</span>
-						<a href="#" class="posts__img">
-							<img src="../img/post-img1.jpg" alt="">
-						</a>
-						<a href="#" class="posts__link">
-							Создание в ЕАЭС единого перестраховщика поможет развитию экспорта в третьи страны
-						</a>
-					</div>
-					<div class="posts__item">
-						<span class="posts__title">Статья</span>
-						<a href="#" class="posts__img">
-							<img src="../img/post-img2.jpg" alt="">
-						</a>
-						<a href="#" class="posts__link">
-							На форуме «Сделано в России» обсудят транспортные решения для развития экспорта
-						</a>
-					</div>
-					<div class="posts__item">
-						<span class="posts__title">Новость</span>
-						<a href="#" class="posts__img">
-							<img src="../img/post-img3.jpg" alt="">
-						</a>
-						<a href="#" class="posts__link">
-							РЭЦ и «Норникель» расширяют партнерство
-						</a>
-					</div>
-					<div class="posts__item">
-						<span class="posts__title">Новость</span>
-						<a href="#" class="posts__img">
-							<img src="../img/post-img1.jpg" alt="">
-						</a>
-						<a href="#" class="posts__link">
-							Лучшие экспортеры Дальнего Востока награждены на ВЭФ
-						</a>
-					</div>
-					<div class="posts__item">
-						<span class="posts__title">Опрос</span>
-						<a href="#" class="posts__img">
-							<img src="../img/post-img4.jpg" alt="">
-						</a>
-						<a href="#" class="posts__link">
-							РЭЦ организует деловую миссию российского бизнеса в Финляндию
-						</a>
-					</div>
-					<div class="posts__item">
-						<span class="posts__title">Интервью</span>
-						<a href="#" class="posts__img">
-							<img src="../img/post-img5.jpg" alt="">
-						</a>
-						<a href="#" class="posts__link">
-							Машиностроительный завод BONUM примет участие в 10-й международной промышленной выставке «ИННОПРОМ» в ...
-						</a>
-					</div>
-					<div class="posts__item">
-						<span class="posts__title">Статья</span>
-						<a href="#" class="posts__img">
-							<img src="../img/post-img6.jpg" alt="">
-						</a>
-						<a href="#" class="posts__link">
-							Made in Russia в Китае: контент – ключевая область сотрудничества
-						</a>
-					</div>
-					<div class="posts__item">
-						<span class="posts__title">Новость</span>
-						<a href="#" class="posts__img">
-							<img src="../img/post-img1.jpg" alt="">
-						</a>
-						<a href="#" class="posts__link">
-							Лучшие экспортеры Дальнего Востока награждены на ВЭФ
-						</a>
-					</div>
-					<div class="posts__item">
-						<span class="posts__title">Статья</span>
-						<a href="#" class="posts__img">
-							<img src="../img/post-img1.jpg" alt="">
-						</a>
-						<a href="#" class="posts__link">
-							Создание в ЕАЭС единого перестраховщика поможет развитию экспорта в третьи страны
-						</a>
-					</div>
-					<div class="posts__item">
-						<span class="posts__title">Статья</span>
-						<a href="#" class="posts__img">
-							<img src="../img/post-img2.jpg" alt="">
-						</a>
-						<a href="#" class="posts__link">
-							На форуме «Сделано в России» обсудят транспортные решения для развития экспорта
-						</a>
-					</div>
-					<div class="posts__item">
-						<span class="posts__title">Новость</span>
-						<a href="#" class="posts__img">
-							<img src="../img/post-img3.jpg" alt="">
-						</a>
-						<a href="#" class="posts__link">
-							РЭЦ и «Норникель» расширяют партнерство
-						</a>
-					</div>
-					<div class="posts__item">
-						<span class="posts__title">Новость</span>
-						<a href="#" class="posts__img">
-							<img src="../img/post-img1.jpg" alt="">
-						</a>
-						<a href="#" class="posts__link">
-							Лучшие экспортеры Дальнего Востока награждены на ВЭФ
-						</a>
-					</div>
-					<div class="posts__item">
-						<span class="posts__title">Опрос</span>
-						<a href="#" class="posts__img">
-							<img src="../img/post-img4.jpg" alt="">
-						</a>
-						<a href="#" class="posts__link">
-							РЭЦ организует деловую миссию российского бизнеса в Финляндию
-						</a>
-					</div>
-					<div class="posts__item">
-						<span class="posts__title">Интервью</span>
-						<a href="#" class="posts__img">
-							<img src="../img/post-img5.jpg" alt="">
-						</a>
-						<a href="#" class="posts__link">
-							Машиностроительный завод BONUM примет участие в 10-й международной промышленной выставке «ИННОПРОМ» в ...
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section">
-		<div class="container">
-			<div class="goods">
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img1.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Рис шлифованный круглозерный</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">«МАКФА»</a>
-					</div>
-					<a href="#" class="goods__review">
-						62 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img2.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Мороженое пломбир крем-брюле</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">АО «ДАКГОМЗ»</a>
-					</div>
-					<a href="#" class="goods__review">
-						24 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img3.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Светодиодная продукция светильники, прожекторы, лампы</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">«VARTON»</a>
-					</div>
-					<a href="#" class="goods__review">
-						62 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img4.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Куртка «Барс»</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">АО «ДАКГОМЗ»</a>
-					</div>
-					<a href="#" class="goods__review">
-						24 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img5.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Металлоформы для труб микротоннелирования</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">Производитель «М-Конструктор» (ИП Багнюк В.Н.)</a>
-					</div>
-					<a href="#" class="goods__review">
-						62 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img6.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Мороженое пломбир крем-брюле</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">АО «ДАКГОМЗ»</a>
-					</div>
-					<a href="#" class="goods__review">
-						24 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img7.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Антенна BAS-2301 WiFi</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">«VARTON»</a>
-					</div>
-					<a href="#" class="goods__review">
-						62 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img8.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Семена сои сорт Аванта</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">АО «ДАКГОМЗ»</a>
-					</div>
-					<a href="#" class="goods__review">
-						24 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img1.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Рис шлифованный круглозерный</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">«МАКФА»</a>
-					</div>
-					<a href="#" class="goods__review">
-						62 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img2.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Мороженое пломбир крем-брюле</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">АО «ДАКГОМЗ»</a>
-					</div>
-					<a href="#" class="goods__review">
-						24 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img3.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Светодиодная продукция светильники, прожекторы, лампы</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">«VARTON»</a>
-					</div>
-					<a href="#" class="goods__review">
-						62 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img4.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Куртка «Барс»</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">АО «ДАКГОМЗ»</a>
-					</div>
-					<a href="#" class="goods__review">
-						24 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img5.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Металлоформы для труб микротоннелирования</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">Производитель «М-Конструктор» (ИП Багнюк В.Н.)</a>
-					</div>
-					<a href="#" class="goods__review">
-						62 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img6.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Мороженое пломбир крем-брюле</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">АО «ДАКГОМЗ»</a>
-					</div>
-					<a href="#" class="goods__review">
-						24 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img7.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Антенна BAS-2301 WiFi</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">«VARTON»</a>
-					</div>
-					<a href="#" class="goods__review">
-						62 отзыва 
-					</a>
-				</div>
-				<div class="goods__item">
-					<a class="goods__img">
-						<img src="../img/goods-img8.png" alt="">
-					</a>
-					<a href="#" class="goods__title">Семена сои сорт Аванта</a>
-					<div class="goods__maker">
-						Производитель
-						<a href="#">АО «ДАКГОМЗ»</a>
-					</div>
-					<a href="#" class="goods__review">
-						24 отзыва 
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-<footer>
-	<div class="container"></div>
-</footer>
-	<script src="../js/jquery.min.js"></script>
-	<script src="../js/libs.min.js"></script>
-	<script src="../js/main.js"></script>
+    <div id="wrapper">
+        <header class="header">
+            <div class="container header__wrap">
+                <div class="logo">
+                    <a href="#">
+                        <img src="../img/svg/logo-img.svg" alt="">
+                        <span>Заводы.рф</span>
+                    </a>
+                </div>
+                <div class="head-menu">
+                    <div class="burger-menu">
+                        <div class="burger-menu-box">
+                            <div class="burger-menu-inner"></div>
+                        </div>
+                    </div>
+                    <div class="menu-wrapper-fixed">
+                        <div class="menu-open-wrapper">
+                            <nav class="header-nav">
+                                <a href="#" class="user hidden-desktop">
+                                    <img src="../img/svg/user-icon.svg" alt="">
+                                </a>
+                                <ul class="menu">
+                                    <li class="menu-item">
+                                        <a href="#" class="menu-item__link">Предприятия</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="menu-item__link">Экспортеры</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="menu-item__link">Продукция</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="menu-item__link">Публикации</a>
+                                    </li>
+                                    <li class="header__search">
+                                        <a href="#">
+                                            <img src="../img/svg/search-icon.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="user hidden-mobile">
+                    <img src="../img/svg/user-icon.svg" alt="">
+                </a>
+            </div>
+        </header>
+        <div class="content">
+            <div class="container content-wrap">
+                <main>
+                    <section class="section">
+                        <span class="title-h2">bread-crumbs</span>
+                        <ul class="breadCrumbs">
+                            <li>
+                                <a href="#">Главная</a>
+                            </li>
+                            <li>
+                                <a href="#">Кондитерские фабрики</a>
+                            </li>
+                            <li>Предприятия Краснодара</li>
+                        </ul>
+                    </section>
+                    <section class="section">
+                        <span class="title-h2">
+                            Pagination
+                        </span>
+                        <ul class="pagination">
+                            <ul>
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="pagination__active">
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li class="pagination__next">
+                                    <a href="#">
+                                        <svg class="icon">
+                                            <use xlink:href="../img/svg/sprite.svg#double-right-arrow-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </section class="section">
+                    <section>
+                        <span class="title-h2">Buttons</span>
+                        <span class="title-h3">small</span>
+                        <a href="#" class="btn btn_sm">small</a>
+                        <a href="#" class="btn btn_sm btn_min-width">min w</a>
+                        <a href="#" class="btn btn_sm btn_border">border</a>
+                        <br>
+                        <br>
+                        <span class="title-h3">default and more styles</span>
+                        <a href="#" class="btn">btn</a>
+                        <a href="#" class="btn btn_min-width">Min width</a>
+                        <br>
+                        <br>
+                        <a href="#" class="btn btn_default">btn_default</a>
+                        <a href="#" class="btn btn_danger">btn_danger</a>
+                        <a href="#" class="btn btn_attention">btn_attention</a>
+                        <a href="#" class="btn btn_succes">btn_succes</a>
+                        <br>
+                        <br>
+                        <a href="#" class="btn btn_border ">btn_default</a>
+                        <a href="#" class="btn btn_border btn_default">btn_default</a>
+                        <a href="#" class="btn btn_border btn_danger">btn_default</a>
+                        <a href="#" class="btn btn_border btn_attention">btn_default</a>
+                        <a href="#" class="btn btn_border btn_succes">btn_default</a>
+                        <br>
+                        <br>
+                        <a href="#" class="btn">
+                            <span class="icon icon_left"></span>
+                            icon left
+                        </a>
+                        <a href="#" class="btn">
+                            icon right
+                            <span class="icon icon_right"></span>
+                        </a>
+                        <br>
+                        <br>
+                        <span class="title-h3">middle</span>
+                        <a href="#" class="btn btn_md">middle</a>
+                        <a href="#" class="btn btn_md btn_min-width">Min width</a>
+                        <a href="#" class="btn btn_md btn_border">Border</a>
+                        <br>
+                        <br>
+                        <span class="title-h3">large</span>
+                        <a href="#" class="btn btn_lg">middle</a>
+                        <a href="#" class="btn btn_lg btn_min-width">Min width</a>
+                        <a href="#" class="btn btn_lg btn_border">Border</a>
+                    </section>
+                    <section class="section">
+                        <span class="title-h2">Form</span>
+                        <form action="" class="form">
+                            <div class="form__input">
+                                <input type="text" placeholder="Название">
+                            </div>
+                            <label for="export-checkbox" class="form__checkbox">
+                                <input type="checkbox" id="export-checkbox">
+                                Экспортер
+                            </label>
+                            <select name="" id="" class="form__select">
+                                <option value="">Регион</option>
+                                <option value="">Регион</option>
+                                <option value="">Регион</option>
+                                <option value="">Регион</option>
+                            </select>
+                            <select name="" id="" class="form__select" disabled="disabled">
+                                <option value="">Город</option>
+                                <option value="">Город</option>
+                                <option value="">Город</option>
+                                <option value="">Город</option>
+                            </select>
+                            <select name="" id="" class="form__select">
+                                <option value="">Отрасль</option>
+                                <option value="">Отрасль</option>
+                                <option value="">Отрасль</option>
+                                <option value="">Отрасль</option>
+                            </select>
+                            <select name="" id="" class="form__select" disabled="disabled">
+                                <option value="">Вид</option>
+                                <option value="">Вид</option>
+                                <option value="">Вид</option>
+                                <option value="">Вид</option>
+                            </select>
+                            <div class="form__btn-wrap">
+                                <a href="#" class="btn">Найти</a>
+                                <a href="#" class="form__reset">
+                                    <span class="icon">
+                                        <svg>
+                                            <use xlink:href="../img/svg/sprite.svg#close-icon"></use>
+                                        </svg>
+                                    </span>Сбросить фильтры</a>
+                            </div>
+                        </form>
+                        <br>
+                        <br>
+                        <form action="" class="filter">
+                            <span class="filter__title">Фильтр</span>
+                            <select name="" id="">
+                                <option value="">Отрасль промышленности</option>
+                                <option value="">Отрасль промышленности</option>
+                                <option value="">Отрасль промышленности</option>
+                                <option value="">Отрасль промышленности</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">Вид</option>
+                                <option value="">Вид</option>
+                                <option value="">Вид</option>
+                                <option value="">Вид</option>
+                            </select>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn">Применить</a>
+                            </div>
+                        </form>
+                        <br>
+                        <br>
+                        <form action="" class="region">
+                            <span class="region__title">Выбрать регион</span>
+                            <select name="" id="">
+                                <option value="">Все регионы</option>
+                                <option value="">Все регионы</option>
+                                <option value="">Все регионы</option>
+                                <option value="">Все регионы</option>
+                            </select>
+                        </form>
+                        <br>
+                        <br>
+                        <form action="" class="review-form">
+                            <span class="title-h3">
+                                Оставить отзыв
+                            </span>
+                            <input type="text" placeholder="Имя">
+                            <select name="" id="">
+                                <option value="">Ваши впечатления</option>
+                                <option value="">Ваши впечатления</option>
+                                <option value="">Ваши впечатления</option>
+                                <option value="">Ваши впечатления</option>
+                            </select>
+                            <textarea name="" id="" placeholder="Отзыв"></textarea>
+                            <span class="file-info">
+                                Максимальный размер файла: 1 МБ.
+                                Допустимые типы файлов: png jpg jpeg.
+                            </span>
+                            <div class="review-form-footer">
+                                <div class="review-form-btn-wrap">
+                                    <input type="submit" class="btn btn_min-width">
+                                    <label for="confirm">
+                                        <input id="confirm" type="checkbox">
+                                        Нажимая кнопку «Отправить» вы соглашаетесь с <a href="#">правилами сайта.</a>
+                                    </label>
+                                </div>
+                                <div class="captcha">
+                                    <img src="../img/captcha.jpg" alt="">
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="section">
+                        <span class="title-h2">
+                            blocks
+                        </span>
+                        <div class="factory">
+                            <div class="factory__img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="factory__head">
+                                <a href="#" class="factory__title">Производственная компания «Мобилюс»</a>
+                            </div>
+                            <div class="factory__txt">
+                                <p>Компания «Мобилюс» берёт своё начало в 2017 году, когда целая группа профессионалов решила основать собственное предприятия для совершенствования производства торгового оборудования, лабораторной и офисной мебели на новый, современный уровень.</p>
+                                <ul class="factory__category">
+                                    <li>
+                                        <a href="#">Машиностроение и металлообработка</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Механические заводы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="factory">
+                            <div class="factory__img">
+                                <img src="../img/factory-img1.png" alt="">
+                            </div>
+                            <div class="factory__head">
+                                <a href="#" class="factory__title">Казанский ювелирный завод (Кулон)</a>
+                                <span class="factory__info">
+                                    <span class="icon"></span>
+                                    Экспортер
+                                </span>
+                            </div>
+                            <div class="factory__txt">
+                                <p>Основная продукция: ювелирные изделия</p>
+                                <ul class="factory__category">
+                                    <li>
+                                        <a href="#">Прочие промышленные производства</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ювелирные заводы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="factory">
+                            <div class="factory__img">
+                                <img src="../img/factory-img2.png" alt="">
+                            </div>
+                            <div class="factory__head">
+                                <a href="#" class="factory__title">Казанская фармацевтическая фабрика (КФФ)</a>
+                                <span class="factory__close">
+                                    <span class="icon"></span>
+                                    Закрыто навсегда
+                                </span>
+                            </div>
+                            <div class="factory__txt">
+                                <p>Созданная с целью обеспечения потребностей аптечной сети Республики Татарстан, фармфабрика быстро расширяет число своих клиентов и ассортимент выпускаемой продукции.</p>
+                                <ul class="factory__category">
+                                    <li>
+                                        <a href="#">Медицинская промышленность</a>
+                                    </li>
+                     
+                                    <li>
+                                        <a href="#">Фармацевтические фабрики</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="factory">
+                            <div class="factory__img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="factory__head">
+                                <a href="#" class="factory__title">Казанский завод компрессорного машиностроения (Казанькомпрессормаш)</a>
+                            </div>
+                            <div class="factory__txt">
+                                <p>ОАО «Казанькомпрессормаш» (ОАО «Казанский завод компрессорного машиностроения» г. Казань, Россия) является ведущим в России и странах СНГ производителем компрессорного оборудования и полнокомплектных решений на базе компрессоров для различных отраслей промышленности.</p>
+                                <ul class="factory__category">
+                                    <li>
+                                        <a href="#">Машиностроение и металлообработка</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Компрессорные заводы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="factory">
+                            <div class="factory__img">
+                                <img src="../img/factory-img3.png" alt="">
+                            </div>
+                            <div class="factory__head">
+                                <a href="#" class="factory__title">Грузоподъем</a>
+                                <span class="factory__info">
+                                    <span class="icon"></span>
+                                    Экспортер
+                                </span>
+                            </div>
+                            <div class="factory__txt">
+                                <p>Компания «Грузоподъем» - это современное производственное предприятие, специализирующееся на изготовлении грузоподъемного и грузозахватного оборудования.</p>
+                                <ul class="factory__category">
+                                    <li>
+                                        <a href="#">Прочие промышленные производства</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Крановые заводы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="factory">
+                            <div class="factory__img">
+                                <img src="../img/factory-img4.png" alt="">
+                            </div>
+                            <div class="factory__head">
+                                <a href="#" class="factory__title">НПП «Завод стеклопластиковых труб»</a>
+                                <span class="factory__info">
+                                    <span class="icon"></span>
+                                    Экспортер
+                                </span>
+                            </div>
+                            <div class="factory__txt">
+                                <p>Созданная с целью обеспечения потребностей аптечной сети Республики Татарстан, фармфабрика быстро расширяет число своих клиентов и ассортимент выпускаемой продукции.</p>
+                                <ul class="factory__category">
+                                    <li>
+                                        <a href="#">Медицинская промышленность</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Трубные заводы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="factory">
+                            <div class="factory__img">
+                                <img src="../img/factory-img5.png" alt="">
+                            </div>
+                            <div class="factory__head">
+                                <a href="#" class="factory__title">Казанский электромеханический завод</a>
+                            </div>
+                            <div class="factory__txt">
+                                <p>Выпускаемые автогидроподъемники марки "Ак Барс" - это широкий ряд коленчатых и телескопических моделей. Номенклатура производимой продукции на сегодняшний день насчитывает около 30 моделей коленчатых</p>
+                                <ul class="factory__category">
+                                    <li>
+                                        <a href="#">Машиностроение и металлообработка</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Электромеханические заводы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section">
+                        <div class="product">
+                            <span class="title-h2">Продукция</span>
+                            <div class="product__wrap">
+                                <div class="product__item">
+                                    <div class="product__img">
+                                        <img src="../img/product-img.jpg" alt="">
+                                    </div>
+                                    <p>Мармелад с облепихой</p>
+                                </div>
+                                <div class="product__item">
+                                    <div class="product__img">
+                                        <img src="../img/product-img2.jpg" alt="">
+                                    </div>
+                                    <p>Весовая халва</p>
+                                </div>
+                                <div class="product__item">
+                                    <div class="product__img">
+                                        <img src="../img/product-img3.jpg" alt="">
+                                    </div>
+                                    <p>Халва кунжутная счастье внутри, 05</p>
+                                </div>
+                                <div class="product__item">
+                                    <div class="product__img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <p>Халвинки подсолнечные</p>
+                                </div>
+                            </div>
+                            <div class="product__footer">
+                                <a href="#" class="btn">Все продукты</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section">
+                        <div class="publications-second">
+                            <span class="title-h3">Публикации</span>
+                            <div class="publications-item publications-item_link">
+                                <span class="title_red">Новость</span>
+                                <a href="#" class="publications-item__link">Об инвестициях в новые технологии и их эффектах для бизнеса</a>
+                                <span class="date">
+                                    31 января, 17:40
+                                </span>
+                            </div>
+                            <div class="publications-item publications-item_link">
+                                <span class="title_red">Новость</span>
+                                <a href="#" class="publications-item__link">Об инвестициях в новые технологии и их эффектах для бизнеса</a>
+                                <span class="date">
+                                    31 января, 17:40
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section">
+                    	<table>
+                    		<thead>
+                    			<th>Компания, штаб-квартира</th>
+                    			<th>Оборот,млрд. руб. (год)</th>
+                    			<th>Специализация</th>
+                    		</thead>
+                    		<tr>
+                    			<td><a href="#">Сибур Холдинг,Москва</a></td>
+                    			<td>243,2 (2013)</td>
+                    			<td>Нефтехимия</td>
+                    		</tr>
+                    		<tr>
+                    			<td><a href="#">Салаватнефтеоргсинтез, Салават, Башкортостан</a></td>
+                    			<td>243,2 (2013)</td>
+                    			<td>Нефтехимия</td>
+                    		</tr>
+                    		<tr>
+                    			<td><a href="#">Еврохим, Москва</a></td>
+                    			<td>166,5 (2012)</td>
+                    			<td>Производство удобрений</td>
+                    		</tr>
+                    		<tr>
+                    			<td><a href="#">Нижнекамскнефтехим, Нижнекамск, Татарстан</a></td>
+                    			<td>243,2 (2013)</td>
+                    			<td>Синтетические каучуки</td>
+                    		</tr>
+                    	</table>
+                    </section>
+                    <section class="section">
+                    	<div class="container">
+                    		<div class="review">
+                    			<div class="review">
+                    				<span class="title-h2">Отзывы</span>
+                    				<div class="review-wrap">
+                    					<div class="review-item">
+                    						<div class="review-item__icon">
+                    						</div>
+                    						<div class="review-item__txt">
+                    							<p>Купила тренажер. Пока все устраивает. Недорогая модель , есть несколько режимов нагрузки, регулировка высоты сиденья, отображение потраченных калорий, пройденной дистанции и скорости. Легкий, не занимает много места. Из минусов - ремни на педалях. </p>
+                    							<span class="name">Олеся</span>
+                    							<a href="#">Ответить</a>
+                    						</div>
+                    					</div>
+                    					<div class="review-item">
+                    						<div class="review-item__icon">
+                    						</div>
+                    						<div class="review-item__txt">
+                    							<p>Полностью разбирается удобен для переезда, качество среднее, но думаю года на три хватит</p>
+                    							<span class="name">Екатерина</span>
+                    							<a href="#">Ответить</a>
+                    						</div>
+                    					</div>
+                    					<div class="review-item review-item_negative">
+                    						<div class="review-item__icon">
+                    						</div>
+                    						<div class="review-item__txt">
+                    							<p>Если медленно крутить педали и добавить нагрузку на регуляторе, то идёт громкий скрежет на всю квартиру. Короче велотренажер не понравился </p>
+                    							<span class="name">Ольга</span>
+                    							<a href="#">Ответить</a>
+                    						</div>
+                    					</div>
+                    				</div>
+                    			</div>
+                    		</div>
+                    	</div>
+                    </section>
+                    <section class="section">
+                    	<div class="conatainer">
+                    		<ul class="content-list">
+                    			<li>
+                    				<span class="content-list__title">
+                    					<span class="icon icon-map"></span>
+                    					Адрес
+                    				</span>
+                    				<span class="content-list__descr">
+                    					352243, Россия, Краснодарский край, г. Новокубанск, ул. Кутузова, 5а
+                    				</span>
+                    			</li>
+                    			<li>
+                    				<span class="content-list__title">
+                    					<span class="icon icon-tel"></span>
+                    					Телефон
+                    				</span>
+                    				<span class="content-list__descr">
+                    					<div>
+                    						<a href="#">(8-800) 333-39-17</a>
+                    					(общий)
+                    				</div>
+                    				<div>
+                    						<a href="#">(861) 213-90-70</a>
+                    					(отдел снабжения)
+                    				</div>
+                    					
+                    				</span>
+                    			</li>
+                    			<li>
+                    				<span class="content-list__title">
+                    					<span class="icon icon-mail"></span>
+                    					Эл. почта
+                    				</span>
+                    				<span class="content-list__descr">
+                    					<div>
+                    						<a href="#">info@f-kozlov.ru</a>
+                    					(общая)
+                    				</div>
+                    				<div>
+                    						<a href="#">sales@f-kozlov.ru</a>
+                    					(отдел продаж)
+                    				</div>
+                    				<div>
+                    						<a href="#">snab@f-kozlov.ru</a>
+                    					(отдел снабжения)
+                    				</div>
+                    				</span>
+                    			</li>
+                    			<li>
+                    				<span class="content-list__title">
+                    					<span class="icon icon-route"></span>
+                    					Схема проезда
+                    				</span>
+                    				<span class="content-list__descr">
+                    					<a href="#"></a>Смотреть на карте
+                    				</span>
+                    			</li>
+                    			<li>
+                    				<span class="content-list__title">
+                    					<span class="icon icon-site"></span>
+                    					Сайт
+                    				</span>
+                    				<span class="content-list__descr">
+                    					<a href="#">халва.su</a>
+                    				</span>
+                    			</li>
+                    		</ul>
+                    	</div>
+                    </section>
+                </main>
+                <aside class="aside">
+                    <div class="aside-list">
+                        <span class="title-h3">
+                            Другие города
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="#">Альметьевск</a>
+                            </li>
+                            <li>
+                                <a href="#">Арск</a>
+                            </li>
+                            <li>
+                                <a href="#">Бугульма</a>
+                            </li>
+                            <li>
+                                <a href="#">Буинск</a>
+                            </li>
+                            <li>
+                                <a href="#">Заинск</a>
+                            </li>
+                            <li>
+                                <a href="#">Зеленодольск</a>
+                            </li>
+                            <li>
+                                <a href="#">Лениногорск</a>
+                            </li>
+                            <li>
+                                <a href="#">Набережные челны</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="aside-list__footer">
+                            Рубрикатор
+                            <svg class="icon">
+                                <use xlink:href="../img/svg/sprite.svg#sitemap-icon"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <section class="section">
+            <div class="container">
+                <div class="publications">
+                    <span class="title-h2">Публикации</span>
+                    <div class="publications__wrap">
+                        <div class="publications-item">
+                            <span class="title_red">Статья</span>
+                            <p>Программа «Экспортеры 2.0» помогла российской компании заключить 11 экспортных контрактов в области ...</p>
+                            <span class="publications-item__date">
+                                31 января, 02:00
+                            </span>
+                        </div>
+                        <div class="publications-item">
+                            <span class="title_red">Новость</span>
+                            <p>Татнефть успешно отработала 2019 г. и строит планы на будущее, в т.ч. глобальные</p>
+                            <span class="publications-item__date">
+                                31 января, 17:40
+                            </span>
+                        </div>
+                        <div class="publications-item">
+                            <span class="title_red">Статья</span>
+                            <p>Об инвестициях в новые технологии и их эффектах для бизнеса</p>
+                            <span class="publications-item__date">
+                                31 января, 17:40
+                            </span>
+                        </div>
+                        <div class="publications-item">
+                            <span class="title_red">Новость</span>
+                            <p>ЛУКОЙЛ-Инжиниринг: инновационный подход к геологоразведке и добыче</p>
+                            <span class="publications-item__date">
+                                30 января, 17:40
+                            </span>
+                        </div>
+                        <div class="publications-item">
+                            <span class="title_red">Новость</span>
+                            <p>Об инвестициях в новые технологии и их эффектах для бизнеса</p>
+                            <span class="publications-item__date">
+                                31 января, 17:40
+                            </span>
+                        </div>
+                        <div class="publications-item">
+                            <span class="title_red">Новость</span>
+                            <p>Об инвестициях в новые технологии и их эффектах для бизнеса</p>
+                            <span class="publications-item__date">
+                                31 января, 17:40
+                            </span>
+                        </div>
+                    </div>
+                    <div class="publications__footer">
+                        <a href="#" class="btn">Все публикации</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="posts">
+                    <div class="posts__wrap">
+                        <div class="posts__item">
+                            <span class="posts__title">Статья</span>
+                            <a href="#" class="posts__img">
+                                <img src="../img/post-img1.jpg" alt="">
+                            </a>
+                            <a href="#" class="posts__link">
+                                Создание в ЕАЭС единого перестраховщика поможет развитию экспорта в третьи страны
+                            </a>
+                        </div>
+                        <div class="posts__item">
+                            <span class="posts__title">Статья</span>
+                            <a href="#" class="posts__img">
+                                <img src="../img/post-img2.jpg" alt="">
+                            </a>
+                            <a href="#" class="posts__link">
+                                На форуме «Сделано в России» обсудят транспортные решения для развития экспорта
+                            </a>
+                        </div>
+                        <div class="posts__item">
+                            <span class="posts__title">Новость</span>
+                            <a href="#" class="posts__img">
+                                <img src="../img/post-img3.jpg" alt="">
+                            </a>
+                            <a href="#" class="posts__link">
+                                РЭЦ и «Норникель» расширяют партнерство
+                            </a>
+                        </div>
+                        <div class="posts__item">
+                            <span class="posts__title">Новость</span>
+                            <a href="#" class="posts__img">
+                                <img src="../img/post-img1.jpg" alt="">
+                            </a>
+                            <a href="#" class="posts__link">
+                                Лучшие экспортеры Дальнего Востока награждены на ВЭФ
+                            </a>
+                        </div>
+                        <div class="posts__item">
+                            <span class="posts__title">Опрос</span>
+                            <a href="#" class="posts__img">
+                                <img src="../img/post-img4.jpg" alt="">
+                            </a>
+                            <a href="#" class="posts__link">
+                                РЭЦ организует деловую миссию российского бизнеса в Финляндию
+                            </a>
+                        </div>
+                        <div class="posts__item">
+                            <span class="posts__title">Интервью</span>
+                            <a href="#" class="posts__img">
+                                <img src="../img/post-img5.jpg" alt="">
+                            </a>
+                            <a href="#" class="posts__link">
+                                Машиностроительный завод BONUM примет участие в 10-й международной промышленной выставке «ИННОПРОМ» в ...
+                            </a>
+                        </div>
+                        <div class="posts__item">
+                            <span class="posts__title">Статья</span>
+                            <a href="#" class="posts__img">
+                                <img src="../img/post-img6.jpg" alt="">
+                            </a>
+                            <a href="#" class="posts__link">
+                                Made in Russia в Китае: контент – ключевая область сотрудничества
+                            </a>
+                        </div>
+                        <div class="posts__item">
+                            <span class="posts__title">Новость</span>
+                            <a href="#" class="posts__img">
+                                <img src="../img/post-img1.jpg" alt="">
+                            </a>
+                            <a href="#" class="posts__link">
+                                Лучшие экспортеры Дальнего Востока награждены на ВЭФ
+                            </a>
+                        </div>
+                        <div class="posts__item">
+                            <span class="posts__title">Статья</span>
+                            <a href="#" class="posts__img">
+                                <img src="../img/post-img1.jpg" alt="">
+                            </a>
+                            <a href="#" class="posts__link">
+                                Создание в ЕАЭС единого перестраховщика поможет развитию экспорта в третьи страны
+                            </a>
+                        </div>
+                        <div class="posts__item">
+                            <span class="posts__title">Статья</span>
+                            <a href="#" class="posts__img">
+                                <img src="../img/post-img2.jpg" alt="">
+                            </a>
+                            <a href="#" class="posts__link">
+                                На форуме «Сделано в России» обсудят транспортные решения для развития экспорта
+                            </a>
+                        </div>
+                        <div class="posts__item">
+                            <span class="posts__title">Новость</span>
+                            <a href="#" class="posts__img">
+                                <img src="../img/post-img3.jpg" alt="">
+                            </a>
+                            <a href="#" class="posts__link">
+                                РЭЦ и «Норникель» расширяют партнерство
+                            </a>
+                        </div>
+                        <div class="posts__item">
+                            <span class="posts__title">Новость</span>
+                            <a href="#" class="posts__img">
+                                <img src="../img/post-img1.jpg" alt="">
+                            </a>
+                            <a href="#" class="posts__link">
+                                Лучшие экспортеры Дальнего Востока награждены на ВЭФ
+                            </a>
+                        </div>
+                        <div class="posts__item">
+                            <span class="posts__title">Опрос</span>
+                            <a href="#" class="posts__img">
+                                <img src="../img/post-img4.jpg" alt="">
+                            </a>
+                            <a href="#" class="posts__link">
+                                РЭЦ организует деловую миссию российского бизнеса в Финляндию
+                            </a>
+                        </div>
+                        <div class="posts__item">
+                            <span class="posts__title">Интервью</span>
+                            <a href="#" class="posts__img">
+                                <img src="../img/post-img5.jpg" alt="">
+                            </a>
+                            <a href="#" class="posts__link">
+                                Машиностроительный завод BONUM примет участие в 10-й международной промышленной выставке «ИННОПРОМ» в ...
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="goods">
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img1.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Рис шлифованный круглозерный</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">«МАКФА»</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            62 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img2.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Мороженое пломбир крем-брюле</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">АО «ДАКГОМЗ»</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            24 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img3.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Светодиодная продукция светильники, прожекторы, лампы</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">«VARTON»</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            62 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img4.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Куртка «Барс»</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">АО «ДАКГОМЗ»</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            24 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img5.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Металлоформы для труб микротоннелирования</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">Производитель «М-Конструктор» (ИП Багнюк В.Н.)</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            62 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img6.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Мороженое пломбир крем-брюле</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">АО «ДАКГОМЗ»</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            24 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img7.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Антенна BAS-2301 WiFi</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">«VARTON»</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            62 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img8.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Семена сои сорт Аванта</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">АО «ДАКГОМЗ»</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            24 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img1.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Рис шлифованный круглозерный</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">«МАКФА»</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            62 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img2.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Мороженое пломбир крем-брюле</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">АО «ДАКГОМЗ»</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            24 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img3.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Светодиодная продукция светильники, прожекторы, лампы</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">«VARTON»</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            62 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img4.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Куртка «Барс»</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">АО «ДАКГОМЗ»</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            24 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img5.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Металлоформы для труб микротоннелирования</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">Производитель «М-Конструктор» (ИП Багнюк В.Н.)</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            62 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img6.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Мороженое пломбир крем-брюле</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">АО «ДАКГОМЗ»</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            24 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img7.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Антенна BAS-2301 WiFi</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">«VARTON»</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            62 отзыва
+                        </a>
+                    </div>
+                    <div class="goods__item">
+                        <a class="goods__img">
+                            <img src="../img/goods-img8.png" alt="">
+                        </a>
+                        <a href="#" class="goods__title">Семена сои сорт Аванта</a>
+                        <div class="goods__maker">
+                            Производитель
+                            <a href="#">АО «ДАКГОМЗ»</a>
+                        </div>
+                        <a href="#" class="goods__review">
+                            24 отзыва
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container"></div>
+    </footer>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/libs.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
+
 </html>
