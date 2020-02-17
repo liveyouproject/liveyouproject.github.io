@@ -872,15 +872,23 @@ button::-moz-focus-inner {
   border: 0; }
 button.mfp-arrow {
   position: absolute;
+  opacity: 0.8;
   top: 50%;
-  margin-top: -40px;
+  margin-top: -22px;
+  width: 44px;
+  height: 44px;
   border-style: solid;
-  border-width: 40px 25px 40px 0;
-  border-color: transparent #9c9c9c transparent transparent;
 }
-.mfp-arrow-right {
-  transform: scale(-1, 1);
+button.mfp-arrow:hover {
+  opacity: 1;
+}
+button.mfp-arrow-right {
+  background: rgba(30,30,30,.8) url('../img/next.png') no-repeat 50% 50%;
   right: 15px;
+}
+button.mfp-arrow-left {
+  background: rgba(30,30,30,.8) url('../img/back.png') no-repeat 50% 50%;
+  left: 15px;
 }
 .mfp-close {
   width: 44px;
