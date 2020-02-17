@@ -36,4 +36,6 @@ $(function(){
   });
 
   jcf.replaceAll();
+   //magnific
+   $('.open-modal').magnificPopup();
 });
