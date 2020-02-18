@@ -1828,7 +1828,10 @@ html, body {
   opacity: 1;
   transition: opacity 0.4s linear;
  }
-
+.project-box .slick-slide:focus,
+.project-box:focus {
+    outline: none;
+  }
  .project-slider__nav {
   padding-top: 75px;
   text-align: center;
@@ -1839,8 +1842,9 @@ html, body {
   max-width: 290px;
   margin: 0px auto;
  }
- .project-slider .slick-list {
- /* margin-left: -10px;*/
+ .project-slider .slick-slide:focus,
+ .project-slider:focus {
+  outline: none;
  }
  .project-slider__item {
   text-align: center;
@@ -2151,6 +2155,11 @@ fabrication
   max-width: 290px;
   margin: 0px auto 80px;
  }
+ .fabrication_slider__img-wrap .slick-slide:focus,
+ .fabrication_slider__img-wrap:focus {
+  outline: none;
+ }
+
  .fabrication_slider__img-wrap .slide-next,
  .fabrication_slider__img-wrap .slide-prev {
   position: absolute;
