@@ -38,4 +38,9 @@ $(function(){
   jcf.replaceAll();
    //magnific
    $('.open-modal').magnificPopup();
+
+   // show-input
+   $('.header-search-form__btn').on('click', function () {
+    $(this).parent().addClass('show-input');
+   });
 });
