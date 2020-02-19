@@ -1887,6 +1887,7 @@ html, body {
   position: relative;
   transition: all .3s;
   padding: 15px;
+  cursor: pointer;
  }
  .project-slider__nav-link path {
   fill: #7c7c7c;
