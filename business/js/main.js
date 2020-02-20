@@ -91,7 +91,7 @@ $('.project-box').slick({
   prevArrow: '',
   swipe: false
 });
-//magnificPopup
+//magnificPopup-fix
 $.extend(true, $.magnificPopup.defaults, {  
        iframe: {
            patterns: {
@@ -103,6 +103,7 @@ $.extend(true, $.magnificPopup.defaults, {
            }
        }
 });
+//magnificPopup
  $('.open-modal').magnificPopup({
         type: 'inline',
         showCloseBtn: false
