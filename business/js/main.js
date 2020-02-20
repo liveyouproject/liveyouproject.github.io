@@ -1,7 +1,5 @@
 jQuery(function($){
 
-  $('input[placeholder], textarea[placeholder]').placeholder();
-
   // add-open-class
   $('.menu-icon').click(function(){
    if($(this).parent().is('.menu-mobile-open')){
@@ -32,8 +30,6 @@ jQuery(function($){
       anchors: ['section1-screen', 'section2-screen', 'section3-screen', 'section4-screen', 'section5-screen', 'section6-screen', 'section7-screen'],
       menu: '#menu'
     });
-
-
 
   $(".mask-phone").mask("+7 (999) 999-99-99");
 
@@ -95,7 +91,18 @@ $('.project-box').slick({
   prevArrow: '',
   swipe: false
 });
-
+//magnificPopup
+$.extend(true, $.magnificPopup.defaults, {  
+       iframe: {
+           patterns: {
+              youtube: {
+                 index: 'youtube.com/', 
+                 id: 'v=', 
+                 src: 'http://www.youtube.com/embed/%id%?autoplay=1' 
+             }
+           }
+       }
+});
  $('.open-modal').magnificPopup({
         type: 'inline',
         showCloseBtn: false
@@ -116,22 +123,14 @@ $('.project-slider__item-img').magnificPopup({
         enabled: true
       }
     });
-$('.popup-youtube').magnificPopup({
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: false,
-    fixedContentPos: false
-});
+ $('.popup-youtube').magnificPopup({
+    type: 'iframe'
+  });
 $('.pop-up-close').click(function(){
     $.magnificPopup.close();
 });
 $('.project-slider__video-link').magnificPopup({
-      type: 'iframe',
-      mainClass: 'mfp-fade',
-      removalDelay: 160,
-      preloader: false,
-      fixedContentPos: false
+      type: 'iframe'
 });
 //form submission
   $("form").submit(function() {
