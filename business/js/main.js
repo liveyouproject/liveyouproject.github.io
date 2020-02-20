@@ -127,7 +127,6 @@ $('.pop-up-close').click(function(){
     $.magnificPopup.close();
 });
 $('.project-slider__video-link').magnificPopup({
-      disableOn: 700,
       type: 'iframe',
       mainClass: 'mfp-fade',
       removalDelay: 160,
