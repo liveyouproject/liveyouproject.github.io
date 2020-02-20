@@ -37,6 +37,9 @@ $(function(){
   jcf.replaceAll();
    //magnific
    $('.open-modal').magnificPopup();
+   $('.modal-open').magnificPopup({
+    type: 'iframe'
+   });
 
    // show-input
    $('.header-search-form__btn').on('click', function () {
