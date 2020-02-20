@@ -13,13 +13,12 @@ $(function(){
    }
   });
 
-  // add-open-class
-  $('.menu-item__link--dd-open').click(function(){
-   if($(this).parent().is('.menu-item--dd-opened')){
-    $(this).parent().removeClass('menu-item--dd-opened');
-   }else{
-    $(this).parent().addClass('menu-item--dd-opened');
-   }
+   // product-gallery
+  $(".product-info-thumbs__item").on('click', function() {
+    event.preventDefault();
+    var mainImage = $(this).index(); 
+    $('.product-info-img__item').removeClass('active');
+    $('.product-info-img__item').eq(mainImage).addClass('active'); 
   });
   //js custom-form
   jcf.setOptions('File', {
@@ -41,6 +40,7 @@ $(function(){
 
    // show-input
    $('.header-search-form__btn').on('click', function () {
+    event.preventDefault();
     $(this).parent().addClass('show-input');
    });
 });

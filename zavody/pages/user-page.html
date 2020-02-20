@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -45,13 +45,10 @@
                   <li class="menu-item">
                     <a href="#" class="menu-item__link">Публикации</a>
                   </li>
-                  <li class="header-search">
-                    <form action="" class="header-search-form">
-                      <div class="header-search-form__input">
-                        <input type="text">
-                      </div>
-                      <button class="header-search-form__btn btn"></button>
-                    </form>
+                  <li class="header__search">
+                    <a href="#">
+                      <img src="../img/svg/search-icon.svg" alt="">
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -63,55 +60,68 @@
         </a>
       </div>
     </header>
-    <div class="content">
+    <div class="middle">
       <div class="container">
-        <div class="preview-list">
-          <a href="pages/default.html" class="preview-head">default.html</a>
-          <ul>
-            <li>
-              <a href="pages/main-page.html">1.Главная
-                <span>main-page.html</span>
-              </a>
-            </li>
-            <li>
-              <a href="pages/company.html">2.Страница компании
-                <span>company.html</span>
-              </a>
-            </li>
-            <li>
-              <a href="pages/map.html">3.Все карты на заводе
-                <span>map.html</span>
-              </a>
-            </li>
-            <li>
-              <a href="pages/category-company.html">4.1.Категория компаний-регион
-                <span>category-company.html</span>
-              </a> 
-            </li>
-            <li><a href="pages/category-company2.html">4.2.Категория компаний-вид деятельности
-              <span>category-company2.html</span>
-            </a>
-              
-            </li>
-            <li>
-              <a href="pages/product-page.html">5.Продукция
-              <span>product-page.html</span>
-            </a>
-          </li>
-            <li><a href="pages/category-product.html">6.Категории товаров
-              <span>category-product.html</span></a></li>
-            <li>
-              <a href="pages/posts.html">7.Публикации
-                <span>posts.html</span>
-              </a>
-          </li>
-            <li>
-              <a href="pages/article.html">8.Статьи
-              <span>article.html</span>
-            </a>
-            </li>
-            <li><a href=""></a></li>
-          </ul>
+        <div class="page-head-txt">
+        </div>
+        <div class="content-wrap">
+          <main class="main">
+            <div class="article-factory-wrap">
+              <span class="title-h2">Предприятия</span>
+              <div class="factory">
+                <div class="factory__img">
+                  <img src="../img/factory-img3.png" alt="">
+                </div>
+                <div class="factory__head">
+                  <a href="#" class="factory__title">Грузоподъем</a>
+                  <span class="factory__info">
+                    <span class="icon"></span>
+                    Экспортер
+                  </span>
+                </div>
+                <div class="factory__txt">
+                  <p>Компания «Грузоподъем» - это современное производственное предприятие, специализирующееся на изготовлении грузоподъемного и грузозахватного оборудования.</p>
+                  <ul class="factory__category">
+                    <li>
+                      <a href="#">Прочие промышленные производства</a>
+                    </li>
+                    <li>
+                      <a href="#">Крановые заводы</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="user-publications">
+              <div class="publications-second">
+              <span class="title-h3">Публикации</span>
+              <div class="publications-item publications-item_link">
+                <span class="title_red">Новость</span>
+                <a href="#" class="publications-item__link">Об инвестициях в новые технологии и их эффектах для бизнеса</a>
+                <span class="date">
+                  31 января, 17:40
+                </span>
+              </div>
+              <div class="publications-item publications-item_link">
+                <span class="title_red">Новость</span>
+                <a href="#" class="publications-item__link">Об инвестициях в новые технологии и их эффектах для бизнеса</a>
+                <span class="date">
+                  31 января, 17:40
+                </span>
+              </div>
+            </div>
+              </div>
+            </div>
+          </main>
+          <aside class="aside">
+            <div class="aside-commercial">
+              <div class="aside-commercial__img">
+                <img src="../img/commercial-img1.jpg" alt="">
+              </div>
+              <div class="aside-commercial__img">
+                <img src="../img/commercial-img2.jpg" alt="">
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
     </div>
@@ -166,8 +176,12 @@
       </div>
     </div>
     <div class="copyright">
-        <span>© 2020, Заводы.рф</span>
-      </div>
+      <span>© 2020, Заводы.рф</span>
+    </div>
   </footer>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/libs.min.js"></script>
+  <script src="../js/main.js"></script>
 </body>
+
 </html>
