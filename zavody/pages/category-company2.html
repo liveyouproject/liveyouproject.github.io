@@ -45,10 +45,18 @@
                   <li class="menu-item">
                     <a href="#" class="menu-item__link">Публикации</a>
                   </li>
-                  <li class="header__search">
-                    <a href="#">
-                      <img src="../img/svg/search-icon.svg" alt="">
-                    </a>
+                  <li class="header-search">
+                    <form action="" class="header-search-form">
+                      <div class="search-icon-desktop btn">
+                        
+                      </div>
+                      <div class="header-search-form__input">
+                        <input type="text">
+                      </div>
+                      <button class="header-search-form__btn btn">
+                        
+                      </button>
+                    </form>
                   </li>
                 </ul>
               </nav>
@@ -88,27 +96,31 @@
         <div class="content-wrap">
           <main class="main">
             <div class="category-form">
-              <form action="" class="form-filter form-filter_row">
-                <span class="form-filter__title">Фильтр</span>
-                <div class="form-filter-grid_start">
-                  <div class="form-filter-grid__select">
+             <form action="" class="form-filter">
+                <div class="form-filter-grid">
+                  <div class="form-filter-grid__item">
+                    <span class="form-filter__title">Фильтр</span>
+                  </div>
+                  <div class="form-filter-grid__item form-filter-grid__item_full-w">
                     <select name="" id="">
-                      <option value="">Отрасль промышленности</option>
-                      <option value="">Отрасль промышленности</option>
-                      <option value="">Отрасль промышленности</option>
-                      <option value="">Отрасль промышленности</option>
+                      <option value="" class="hideme">Отрасль промышленности</option>
+                      <option value="">option1</option>
+                      <option value="">option2</option>
+                      <option value="">option3</option>
                     </select>
                   </div>
-                  <div class="form-filter-grid__select">
+                  <div class="form-filter-grid__item form-filter-grid__item_full-w">
                     <select name="" id="">
-                      <option value="">Вид</option>
-                      <option value="">Вид</option>
-                      <option value="">Вид</option>
-                      <option value="">Вид</option>
+                      <option value="" class="hideme">Вид</option>
+                      <option value="">option1</option>
+                      <option value="">option2</option>
+                      <option value="">option3</option>
                     </select>
+                  </div>
+                  <div class="form-filter-grid__item">
+                    <a href="#" class="btn">Применить</a>
                   </div>
                 </div>
-                <a href="#" class="btn">Применить</a>
               </form>
             </div>
             <div class="factory-wrap">

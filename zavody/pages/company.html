@@ -12,7 +12,7 @@
 
 <body>
   <div id="wrapper">
-    <header class="header">
+   <header class="header">
       <div class="container header__wrap">
         <div class="logo">
           <a href="#">
@@ -45,10 +45,18 @@
                   <li class="menu-item">
                     <a href="#" class="menu-item__link">Публикации</a>
                   </li>
-                  <li class="header__search">
-                    <a href="#">
-                      <img src="../img/svg/search-icon.svg" alt="">
-                    </a>
+                  <li class="header-search">
+                    <form action="" class="header-search-form">
+                      <div class="search-icon-desktop btn">
+                        
+                      </div>
+                      <div class="header-search-form__input">
+                        <input type="text">
+                      </div>
+                      <button class="header-search-form__btn btn">
+                        
+                      </button>
+                    </form>
                   </li>
                 </ul>
               </nav>
@@ -90,10 +98,10 @@
             </div>
             <ul class="company-head-menu">
               <li><a href="#">О компании</a></li>
-              <li><a href="#">Продукция</a></li>
+              <li><a href="#products-company" class="scrollto">Продукция</a></li>
               <li><a href="#">Вакансии</a></li>
-              <li><a href="#">Реквизиты</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#requisites-company" class="scrollto">Реквизиты</a></li>
+              <li><a href="#contact-company">Контакты</a></li>
             </ul>
           </div>
           </div>
@@ -104,16 +112,16 @@
                 <a href="#">О компании</a>
               </option>
               <option value="">
-                <a href="#">Продукция</a>
+                <a href="#products-company" class="scrollto">Продукция</a>
               </option>
               <option value="">
                 <a href="#">Вакансии</a>
               </option>
               <option value="">
-                <a href="#">Реквизиты</a>
+                <a href="#requisites-company" class="scrollto">Реквизиты</a>
               </option>
               <option value="">
-                <a href="#">Контакты</a>
+                <a href="#contact-company" class="scrollto">Контакты</a>
               </option>
             </select>
           </div>
@@ -129,7 +137,7 @@
                 </p>
               </div>
             </div>
-            <div class="company-products">
+            <div class="company-products" id="products-company">
               <div class="product">
                 <span class="title-h2">Продукция</span>
                 <div class="product__wrap">
@@ -182,7 +190,7 @@
                 </div>
               </div>
             </div>
-            <div class="company-contact">
+            <div class="company-contact" id="contact-company">
               <span class="title-h2">Контакты</span>
               <ul class="content-list">
                 <li>
@@ -250,7 +258,7 @@
                 </li>
               </ul>
             </div>
-            <div class="company-requisites">
+            <div class="company-requisites" id="requisites-company">
               <span class="title-h2">Реквизиты</span>
               <ul class="content-list">
                 <li>

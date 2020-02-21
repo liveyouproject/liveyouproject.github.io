@@ -29,9 +29,22 @@
           <div class="menu-wrapper-fixed">
             <div class="menu-open-wrapper">
               <nav class="header-nav">
-                <a href="#" class="user hidden-desktop">
+                <div href="#" class="user user-mobile user-wrap">
                   <img src="../img/svg/user-icon.svg" alt="">
-                </a>
+                  <div class="user-txt">
+                    Александр И.
+                  </div>
+                  <div class="user-dropdown-list">
+                    <ul>
+                      <li><a href="#">Личный кабинет</a></li>
+                      <li><a href="#">Пункт 1</a></li>
+                      <li><a href="#">Пункт 2</a></li>
+                    </ul>
+                    <a href="#" class="user-dropdown-link">
+                      Выйти
+                    </a>
+                  </div>
+                </div>
                 <ul class="menu">
                   <li class="menu-item">
                     <a href="#" class="menu-item__link">Предприятия</a>
@@ -45,19 +58,40 @@
                   <li class="menu-item">
                     <a href="#" class="menu-item__link">Публикации</a>
                   </li>
-                  <li class="header__search">
-                    <a href="#">
-                      <img src="../img/svg/search-icon.svg" alt="">
-                    </a>
+                  <li class="header-search header-search_user">
+                    <form action="" class="header-search-form">
+                      <div class="search-icon-desktop btn">
+                        
+                      </div>
+                      <div class="header-search-form__input">
+                        <input type="text">
+                      </div>
+                      <button class="header-search-form__btn btn">
+                        
+                      </button>
+                    </form>
                   </li>
                 </ul>
               </nav>
             </div>
           </div>
         </div>
-        <a href="#" class="user hidden-mobile">
-          <img src="../img/svg/user-icon.svg" alt="">
-        </a>
+        <div href="#" class="user user-wrap user-desktop">
+                  <img src="../img/svg/user-icon.svg" alt="">
+                  <div class="user-txt">
+                    Александр И.
+                  </div>
+                  <div class="user-dropdown-list">
+                    <ul>
+                      <li><a href="#">Личный кабинет</a></li>
+                      <li><a href="#">Пункт 1</a></li>
+                      <li><a href="#">Пункт 2</a></li>
+                    </ul>
+                    <a href="#" class="user-dropdown-link">
+                      Выйти
+                    </a>
+                  </div>
+                </div>
       </div>
     </header>
     <div class="middle">
@@ -128,7 +162,7 @@
                 </li>
               </ul>
             </div>
-            <div class="article-factory-wrap">
+            <div class="user-factory-wrap">
               <span class="title-h2">Связанные компании</span>
               <div class="factory">
                 <div class="factory__img">
@@ -153,6 +187,7 @@
                   </ul>
                 </div>
               </div>
+            </div>
               <div class="user-publications">
               <div class="publications-second">
               <span class="title-h2">Публикации</span>
@@ -172,7 +207,6 @@
               </div>
             </div>
               </div>
-            </div>
           </main>
           <aside class="aside">
            <div class="user-aside-list">
