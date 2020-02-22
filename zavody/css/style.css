@@ -2974,6 +2974,9 @@ figure figcaption {
     width: 48%;
     margin-left: 2%;
   }
+  .content-list {
+    list-style: none;
+  }
   .content-list li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3429,6 +3432,19 @@ figure figcaption {
   }
   .main-form .form-filter .form-filter-btn-wrap {
     width: 282px;
+  }
+  .form-grid {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .form-grid__item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .form-grid__item:not(:first-child) {
+    margin-left: 20px;
   }
   .goods .border-bl_product {
     padding: 20px 20px 40px;
