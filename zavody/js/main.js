@@ -76,12 +76,11 @@ $(function() {
    
    $.fn.uploader = function( options ) {
      var settings = $.extend({
-       MessageAreaText: "No files selected.",
-       MessageAreaTextWithFiles: "File List:",
-       DefaultErrorMessage: "Unable to open this file.",
-       BadTypeErrorMessage: "We cannot accept this file type at this time.",
-       acceptedFileTypes: ['pdf', 'jpg', 'gif', 'jpeg', 'bmp', 'tif', 'tiff', 'png', 'xps', 'doc', 'docx',
-        'fax', 'wmp', 'ico', 'txt', 'cs', 'rtf', 'xls', 'xlsx']
+       MessageAreaText: "Файлы не выбраны.",
+       MessageAreaTextWithFiles: "Список файлов:",
+       DefaultErrorMessage: "Невозможно открыть этот файл.",
+       BadTypeErrorMessage: "На данный момент этот файл не поддерживается.",
+       acceptedFileTypes: ['jpg', 'jpeg', 'png']
      }, options );
   
      var uploadId = 1;
