@@ -3026,7 +3026,7 @@ figure figcaption {
     margin-bottom: 20px;
   }
   .form__textarea {
-    height: 186px;
+    height: 136px;
   }
   .form__checkbox {
     width: 100%;
@@ -3539,8 +3539,16 @@ figure figcaption {
 .file-upload {
   background-color: #F8F8F8;
   overflow: hidden;
-  padding: 10px;
+  padding: 7px 10px;
   margin-bottom: 5px;
+  border: 1px solid #E4E4E4;
+  border-top: none;
+  border-radius: 2px;
+  margin-top: -1px;
+}
+
+.file-uploader textarea {
+  border-bottom: none;
 }
 
 .file-uploader__message-area {
@@ -3642,8 +3650,8 @@ figure figcaption {
 }
 
 .file-chooser p {
-  font-size: 18px;
-  padding-top: 1em;
+  font-size: 12px;
+  margin-bottom: 0px;
 }
 
 .file-list__name {
@@ -3687,6 +3695,10 @@ figure figcaption {
   display: none;
 }
 
+.error-message {
+  color: #C22353;
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3705,6 +3717,7 @@ ul, li {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    overflow: auto;
   }
   .file-list {
     -webkit-box-flex: 1;
