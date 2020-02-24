@@ -570,7 +570,8 @@
               </form>
               <br>
               <br>
-              <form action="" class="form" method="post" enctype="multipart/form-data">
+              <form action="" class="form file-uploader"
+              enctype="multipart/form-data">
                 <span class="title-h3">
                   Оставить отзыв
                 </span>
@@ -590,12 +591,13 @@
                 <div class="form__textarea">
                   <textarea name="" id="" placeholder="Отзыв"></textarea>
                 </div>
-                <div class="form-file">
-                  <div class="file-uploader" action="">
-                    <div class="file-chooser">
-                      <input class="file-chooser__input" type="file">
-                    </div>
-                  </div>
+                <div class="file-upload">
+                   <div class="file-uploader__message-area">
+                  <p>Select a file to upload</p>
+                </div>
+                <div class="file-chooser">
+                  <input class="file-chooser__input" type="file">
+                </div>
                 </div>
                 <span class="file-info">
                   Максимальный размер файла: 1 МБ.
@@ -604,7 +606,7 @@
                 <div class="form-footer">
                   <div class="form-btn-wrap">
                     <div class="form__submit">
-                      <input class="btn file-uploader__submit-button" type="submit">
+                      <input class="btn" type="submit">
                     </div>
                     <div class="form__label">
                       <label for="confirm">
