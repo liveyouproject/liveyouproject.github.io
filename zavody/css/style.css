@@ -1666,7 +1666,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0px;
+  margin: 0px 0px 20px;
   font-weight: 400;
 }
 
@@ -2158,7 +2158,7 @@ figure figcaption {
   }
   .text-bl h1 {
     font-size: 34px;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
   }
   .text-bl h2 {
     font-size: 30px;
@@ -2180,15 +2180,16 @@ figure figcaption {
   .text-bl p {
     margin-bottom: 20px;
   }
-  .title-h2 {
+  h2, .title-h2 {
     font-size: 30px;
     margin-bottom: 36px;
+    line-height: 120%;
   }
-  .title-h1 {
+  h1, .title-h1 {
     font-size: 34px;
     margin-bottom: 30px;
   }
-  .title-h3 {
+  h3, .title-h3 {
     font-size: 22px;
     margin-bottom: 28px;
   }
@@ -2560,6 +2561,10 @@ figure figcaption {
 }
 
 /*----------------content-list-------------------*/
+.content-list {
+  list-style: none;
+}
+
 .content-list li {
   margin-bottom: 26px;
 }
@@ -4081,7 +4086,7 @@ ul, li {
   display: flex;
 }
 
-.product-info-txt .title-h1 {
+.product-info-txt h1 {
   margin-bottom: 21px;
 }
 
@@ -4986,13 +4991,13 @@ ul, li {
   display: block;
 }
 
-.user-title {
-  margin-bottom: 2px;
-}
-
 .user-txt .date {
   display: block;
   margin-bottom: 3px;
+}
+
+.user-txt h1 {
+  margin-bottom: 6px;
 }
 
 .user-wrap {
