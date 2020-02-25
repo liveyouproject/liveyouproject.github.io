@@ -38,11 +38,14 @@ $(function() {
   $('.open-modal').magnificPopup();
 
   // show-input
-  $('.search-icon-desktop').on('click', function() {
-    $(this).parent().addClass('show-input');
-  });
-  $('.header-search-form__btn').on('click', function() {
-    $(this).parent().removeClass('show-input');
+  // $('.search-icon-desktop').on('click', function() {
+  //   $(this).parent().addClass('show-input');
+  // });
+  // $('.header-search-form__btn').on('click', function() {
+  //   $(this).parent().removeClass('show-input');
+  // });
+  $('.search-btn').on('click', function() {
+    $('.menu-wrapper-fixed').toggleClass('show-search-field')
   });
 
   //flowing-scroll

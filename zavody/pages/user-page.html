@@ -15,9 +15,8 @@
     <header class="header">
       <div class="container header__wrap">
         <div class="logo">
-          <a href="#">
-            <img src="../img/svg/logo-img.svg" alt="">
-            <span>Заводы.рф</span>
+         <a href="#">
+            <img src="../img/svg/logo-zavody.svg" alt="">
           </a>
         </div>
         <div class="head-menu">
@@ -46,6 +45,11 @@
                   </div>
                 </div>
                 <ul class="menu">
+                  <li class="menu-item__search">
+                      <div class="search-btn">
+                
+                      </div>
+                  </li>
                   <li class="menu-item">
                     <a href="#" class="menu-item__link">Предприятия</a>
                   </li>
@@ -58,22 +62,17 @@
                   <li class="menu-item">
                     <a href="#" class="menu-item__link">Публикации</a>
                   </li>
-                  <li class="header-search header-search_user">
-                    <form action="" class="header-search-form">
-                      <div class="search-icon-desktop btn">
-                        
-                      </div>
-                      <div class="header-search-form__input">
-                        <input type="text">
-                      </div>
-                      <button class="header-search-form__btn btn">
-                        
-                      </button>
-                    </form>
-                  </li>
                 </ul>
               </nav>
             </div>
+            <form action="" class="header-search">
+              <input type="text" placeholder="Поиск">
+              <button>
+                <svg class="icon">
+                  <use xlink:href="../img/svg/sprite.svg#search-icon"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
         <div href="#" class="user user-wrap user-desktop">
