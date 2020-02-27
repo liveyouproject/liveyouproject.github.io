@@ -5430,6 +5430,7 @@ ul, li {
 }
 
 .header .logo {
+  width: 160px;
   margin-top: 3px;
 }
 
