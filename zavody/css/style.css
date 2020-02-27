@@ -5243,8 +5243,8 @@ ul, li {
 
 /* -- Main menu --------------------- */
 .menu-open-wrapper-page {
-  overflow: hidden;
-  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
   height: 100%;
   width: 100%;
   top: 0;
@@ -5330,7 +5330,7 @@ ul, li {
 }
 
 .menu-burger--opened .burger-menu {
-  position: fixed;
+  position: absolute;
 }
 
 .menu-burger--opened .burger-menu-inner {
