@@ -1,0 +1,88 @@
+/* ----- Page structure ---------------- */
+html
+  height: 100%
+
+body
+  min-height: 100%
+  display: flex
+  flex-direction: column
+  min-width: 320px
+  min-height: 100%
+
+.site-wrapper
+  overflow: hidden
+  flex: 1 0 auto
+
+.footer
+  flex-shrink: 0
+
+.section-st
+  padding-top: 80px
+  padding-bottom: 20px
+
+.container
+  padding-left: 10px
+  padding-right: 10px
+
+.hidden-mobile,
+.hidden-devices
+  display: none
+
+.main
+  padding: 50px 0
+
+/* Min width 740 pixels */
+@media only screen and (min-width: 740px)
+  .hidden-tablet
+    display: none
+
+  .hidden-mobile
+    display: block
+/* end media min width 740 pixels */
+
+
+/* Min width 960 pixels */
+@media only screen and (min-width: 960px)
+  .section-st
+    padding-top: 120px
+    padding-bottom: 40px
+
+  .container
+    max-width: 1170px
+    padding-left: 15px
+    padding-right: 15px
+    margin-left: auto
+    margin-right: auto
+
+  .hidden-devices,
+  .hidden-tablet
+    display: block
+
+  .hidden-desktop
+    display: none
+/* end media min width 960 pixels */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

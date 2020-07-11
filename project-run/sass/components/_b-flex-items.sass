@@ -1,0 +1,148 @@
+.b-flex-item
+  display: flex
+  flex-direction: column
+  margin-bottom: 30px
+  box-shadow: 0 10px 15px rgba(#000, 0.15)
+  border-radius: 10px
+
+.b-flex-item-body
+  padding: 0 15px 15px
+  flex-grow: 1
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+
+  p
+    max-width: 360px
+    margin-bottom: 15px
+    margin-left: auto
+    margin-right: auto
+    font-size: 14px
+    line-height: 1.45em
+    color: #7d7b7c
+    text-align: justify
+
+    &:last-child
+      margin-bottom: 10px
+
+.b-flex-icon-wrapper
+  padding: 5px 15px
+  min-height: 80px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.b-flex-icon
+  margin-right: 15px
+  text-align: center
+
+  .icon
+    width: 40px
+    height: 40px
+
+.b-flex-tt
+  margin-top: 4px
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+
+.b-flex-btn
+  padding: 10px 0 15px
+  text-align: center
+  
+.b-flex-price
+  text-align: center
+  margin: 20px 0 15px
+  font-size: 30px
+  line-height: 1em
+
+  strong
+    font-size: 48px
+    line-height: 1em
+
+.b-flex-image
+  height: 136px
+  overflow: hidden
+  margin-bottom: 20px
+
+  img
+    width: 100%
+
+.b-flex-articles-min
+  display: flex
+  flex-wrap: wrap
+
+  .b-flex-item
+    max-width: 265px
+    margin-left: auto
+    margin-right: auto
+
+  .b-flex-tt
+    font-weight: 400
+    margin-bottom: 12px
+
+  .b-flex-btn
+    padding-bottom: 5px
+
+
+/* Min width 740 pixels */
+@media only screen and (min-width: 740px)
+  .b-flex
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  .b-flex-item
+    width: 49%
+
+  .b-flex_three-col
+    .b-flex-item
+      &:last-child
+        margin-left: auto
+        margin-right: auto
+
+  .b-flex-articles-min
+    justify-content: center
+
+    .b-flex-item
+      margin-left: 15px
+      margin-right: 15px
+/* end media min width 740 pixels */
+
+/* Min width 960 pixels */
+@media only screen and (min-width: 960px)
+  .b-flex_three-col
+    .b-flex-item
+      width: 32%
+
+      &:last-child
+        margin-left: 0
+        margin-right: 0
+
+  .b-flex-icon-wrapper
+    flex-direction: column
+    justify-content: flex-end
+    min-height: 130px
+    padding-bottom: 15px
+
+  .b-flex-icon
+    margin: 0 0 15px
+
+    .icon
+      width: 50px
+      height: 50px
+/* end media min width 960 pixels */
+
+/* Min width 1100 pixels */
+@media only screen and (min-width: 1100px)
+  .b-flex-item
+    width: 23.5%
+
+  .b-flex-articles-min
+    justify-content: space-between
+    
+    .b-flex-item
+      margin-left: 0
+      margin-right: 0
+/* end media min width 1100 pixels */
