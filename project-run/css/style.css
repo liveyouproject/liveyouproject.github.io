@@ -708,6 +708,9 @@ input[type=search] {
   text-align: center;
   padding: 40px 0px;
 }
+.banner__register .banner__btn-wrap {
+  margin-bottom: 0px;
+}
 .banner__title {
   line-height: 36px;
 }
@@ -795,6 +798,7 @@ input[type=search] {
   .banner__inner {
     position: relative;
     padding: 60px 0px;
+    min-height: 600px;
   }
   .banner__content {
     width: 50%;
@@ -853,6 +857,7 @@ input[type=search] {
   }
   .banner__inner {
     padding: 115px 0px;
+    min-height: 746px;
   }
   .banner__content {
     width: 55%;
