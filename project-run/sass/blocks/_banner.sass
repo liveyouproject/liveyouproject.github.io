@@ -4,10 +4,14 @@
 
   &__title
     line-height: 36px
+    .text_sm
+      display: block
+      font-size: 18px
+      line-height: 22px
   
   &__text
-    font-size: 18px
-    line-height: 28px
+    font-size: 16px
+    line-height: 24px
     color: #7d7b7c
     margin-bottom: 60px
   &__items
@@ -33,11 +37,14 @@
   &__img 
     margin: 0px auto 15px
     max-width: 500px
+
   &__btn-wrap
     margin-bottom: 30px
+
   &__btn-descr
     a
       color: $default-color
+
   &__btn 
     margin-bottom: 10px
 
@@ -48,10 +55,35 @@
   &__descr
     font-size: 12px
     line-height: 24px
+
+@media only screen and (min-width: 740px)
+  .banner
+    margin-bottom: 60px
+
+    &__title
+      .text_sm
+        font-size: 37px
+        line-height: 42px
+
+    &__text
+      font-size: 18px
+      line-height: 28px
+
 @media only screen and (min-width: 960px) 
   .banner
     text-align: left
     padding: 0
+    margin-bottom: 100px
+    
+    &_register
+      .banner__text
+        max-width: 460px
+
+      .banner__btn
+        margin-right: 0
+
+      .banner__content
+        max-width: 515px
 
     &__inner
       position: relative
@@ -60,7 +92,7 @@
     &__content
       width: 50%
       max-width: 566px
-    
+
     &__items
       margin: 0px 0px 35px -15px
 
@@ -85,8 +117,7 @@
       width: 50%
       max-width: 714px
       right: 0
-      top: 50%
-      transform: translateY(-50%)
+      top: 0
 
     &__title
       margin-bottom: 25px
@@ -99,6 +130,7 @@
     &__btn
       margin-bottom: 0
       margin-right: 20px
+
     &__btn-descr
       font-size: 14px
       line-height: 24px
@@ -106,6 +138,12 @@
 
 @media only screen and (min-width: 1200px)
   .banner
+    margin-bottom: 120px
+
+    &_register
+      .banner__inner
+        padding: 160px 0px
+
     &__inner
       padding: 115px 0px
     
@@ -115,10 +153,12 @@
 
     &__items
       margin: 0px 0px 95px -15px
+
     &__img
       padding-left: 0px
       width: 45%
       right: 0px
+
 @media only screen and (min-width: 1400px)
   .banner
     &__content

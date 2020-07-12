@@ -711,9 +711,14 @@ input[type=search] {
 .banner__title {
   line-height: 36px;
 }
-.banner__text {
+.banner__title .text_sm {
+  display: block;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 22px;
+}
+.banner__text {
+  font-size: 16px;
+  line-height: 24px;
   color: #7d7b7c;
   margin-bottom: 60px;
 }
@@ -759,10 +764,33 @@ input[type=search] {
   line-height: 24px;
 }
 
+@media only screen and (min-width: 740px) {
+  .banner {
+    margin-bottom: 60px;
+  }
+  .banner__title .text_sm {
+    font-size: 37px;
+    line-height: 42px;
+  }
+  .banner__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
 @media only screen and (min-width: 960px) {
   .banner {
     text-align: left;
     padding: 0;
+    margin-bottom: 100px;
+  }
+  .banner_register .banner__text {
+    max-width: 460px;
+  }
+  .banner_register .banner__btn {
+    margin-right: 0;
+  }
+  .banner_register .banner__content {
+    max-width: 515px;
   }
   .banner__inner {
     position: relative;
@@ -796,8 +824,7 @@ input[type=search] {
     width: 50%;
     max-width: 714px;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
   }
   .banner__title {
     margin-bottom: 25px;
@@ -818,6 +845,12 @@ input[type=search] {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .banner {
+    margin-bottom: 120px;
+  }
+  .banner_register .banner__inner {
+    padding: 160px 0px;
+  }
   .banner__inner {
     padding: 115px 0px;
   }
