@@ -1,0 +1,100 @@
+.tabs-wrapper
+  margin-bottom: 50px
+
+.tabs-header
+  display: flex
+  flex-direction: column
+  border: 1px solid #ccc
+  border-bottom: none
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+  &__tab
+    position: relative
+    padding: 10px 20px
+    margin: 0
+    width: 100%
+    background-color: #fff
+    cursor: pointer
+    border-bottom: 1px solid #ccc
+
+    &.tabs_active
+      cursor: default
+      font-weight: bold
+
+      &:after
+        height: 100%
+
+      &:hover
+        background-color: #fff
+
+    &:last-child
+      border-bottom: none
+
+    &:after
+      content: ''
+      position: absolute
+      left: -1px
+      top: 0
+      z-index: 3
+      width: 3px
+      height: 0
+      background-color: $second-color
+
+    &:hover
+      background-color: rgba(0, 0, 0, 0.05)
+
+.tabs-panel
+  border: 1px solid #ccc
+  background-color: #fff
+  padding: 15px 20px
+  display: none
+
+  &.tabs_active
+    display: block
+
+/* Min width 740 pixels */
+@media only screen and (min-width: 740px)
+  .tabs-header
+    flex-direction: row
+    border: none
+
+    &__tab
+      padding: 20px 40px
+      width: auto
+      border: 0
+      border-top: 1px solid #ccc
+      border-left: 1px solid #ccc
+      font-size: 18px
+
+      &.tabs_active
+        font-weight: normal
+
+        &:after
+          width: 100%
+          height: 3px
+          transition: width 0.15s ease
+
+        &:before
+          content: ''
+          position: absolute
+          z-index: 3
+          left: 0
+          bottom: -2px
+          height: 4px
+          width: 100%
+          background-color: #fff
+
+      &:after
+        left: 0
+        top: -1px
+        height: 3px
+        width: 0
+
+      &:last-child
+        border-right: 1px solid #ccc
+
+  .tabs-panel
+    padding: 30px 40px
+/* end media min width 740 pixels */

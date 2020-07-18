@@ -1,0 +1,46 @@
+.table-wrapper
+  border: 3px solid #dae3e0
+  overflow: auto
+  border-radius: 15px
+
+table
+  width: 100%
+  font-size: 14px
+  line-height: 1.5em
+  border-collapse: collapse
+  text-align: left
+
+  th, td
+    padding: 15px 20px
+    border-left: 1px solid #dae3e0
+
+    &:first-child
+      border-left: none
+
+  th
+    background-color: #e4ece9
+    border-bottom: 1px solid #dae3e0
+    padding-top: 10px
+    padding-bottom: 10px
+    white-space: nowrap
+
+  td
+    border-top: 1px solid #dae3e0
+    vertical-align: top
+
+/* Min width 740 pixels */
+@media only screen and (min-width: 740px)
+  .table-wrapper
+    border-radius: 25px
+    border-width: 5px
+
+  table
+    font-size: 16px
+/* end media min width 740 pixels */
+
+/* Min width 960 pixels */
+@media only screen and (min-width: 960px)
+  table
+    th, td
+      padding: 20px 32px
+/* end media min width 960 pixels */

@@ -1,0 +1,263 @@
+/* ----- Typography -------------------- */
+*
+  box-sizing: border-box
+
+body
+  width: 100%
+  margin: 0
+  padding: 0
+  background-color: #ffffff
+  font: $site-text-size-mobile $site-font-family, Arial, sans-serif
+  line-height: 1.4em
+  color: $site-text-color
+
+.title-site, h1, h2, h3, h4, h5, h6
+  display: block
+  margin: 0 0 20px
+  padding: 0
+  font-family: $site-font-family, Arial, sans-serif
+  font-weight: 700
+  line-height: 1.3em
+  color: $site-title-color
+
+.title-site
+  &_large
+    font-size: $site-large-size-mobile
+    line-height: 1.15em
+
+  &_mid,
+  &_mid-min
+    font-size: $site-mid-size-moblie
+    line-height: 1.15em
+
+
+h1, .title-site_h1
+  font-size: $site-h1-size-mobile
+
+h2, .title-site_h2
+  font-size: $site-h2-size-mobile
+
+h3, .title-site_h3
+  font-size: $site-h3-size-mobile
+  line-height: 1.5em
+
+h4, .title-site_h4
+  font-size: $site-h4-size-mobile
+  line-height: 1.5em
+
+h5, .title-site_h5
+  font-size: $site-h5-size-mobile
+  line-height: 1.5em
+
+h6, .title-site_h6
+  font-size: $site-h6-size-mobile
+  line-height: 1.5em
+
+ul, ol
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+li
+  margin: 0
+  padding: 0
+
+p
+  margin: 0 0 20px
+
+blockquote
+  display: block
+  position: relative
+  padding: 35px 10px 32px
+  margin: 35px 0
+  font-family: $site-font-family, Arial, sans-serif
+  font-size: 16px
+  line-height: 1.45em
+  border-top: 3px solid #cdcdcd
+  border-radius: 1px
+  color: $main-color
+  text-align: center
+
+  p
+    position: relative
+    z-index: 5
+    margin: 0
+
+  &::before
+    content: ''
+    position: absolute
+    top: -20px
+    left: 50%
+    width: 68px
+    height: 36px
+    margin-left: -34px
+    z-index: 2
+    background-color: #fff
+    background-image: url('../img/bq.png')
+    background-repeat: no-repeat
+    background-position: 54% 50%
+
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 50%
+    width: 140px
+    height: 3px
+    border-radius: 1px
+    background-color: #cdcdcd
+    margin-left: -70px
+
+
+.text-bl
+  &__more-width
+    margin: 35px 0
+
+    img
+      vertical-align: top
+
+  ul
+    margin-bottom: 20px
+    color: rgba(#000, 0.8)
+
+    li
+      position: relative
+      padding-left: 17px
+
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 7px
+        width: 8px
+        height: 8px
+        border-radius: 50%
+        background-color: $main-color
+
+  ol
+    margin-bottom: 20px
+    counter-reset: section
+    list-style-type: none
+    color: rgba(#000, 0.8)
+
+    li
+      position: relative
+      padding-left: 27px
+      margin-bottom: 20px
+
+      &::before
+        position: absolute
+        left: 0
+        top: 0
+        font-size: 17px
+        color: $main-color
+        font-weight: 900
+        counter-increment: section
+        content: counters(section,".") " "
+
+.text_center
+  text-align: center
+
+.text_left
+  text-align: left
+
+.text_right
+  text-align: right
+
+.text_uppercase
+  text-transform: uppercase
+
+img
+  vertical-align: middle
+  max-width: 100%
+
+a
+  color: $main-color
+  text-decoration: underline
+  transition: color 0.2s
+
+  &:hover
+    text-decoration: none
+    color: lighten($main-color, 10%)
+
+
+
+/* Min width 740 pixels */
+@media only screen and (min-width: 740px)
+  body
+    font-size: $site-text-size
+
+  blockquote
+    margin: 45px 0
+    padding-left: 28px
+    padding-right: 28px
+    font-size: 18px
+    line-height: 1.55em
+
+    &::after
+      width: 360px
+      margin-left: -180px
+
+  .title-site, h1, h2, h3, h4, h5, h6
+    line-height: 1.15em
+
+  .title-site
+    &_large
+      font-size: $site-large-size
+      line-height: 1.15em
+      line-height: 0.9em
+
+    &_mid
+      font-size: $site-mid-size
+
+    &_mid-min
+      font-size: $site-mid-min-size
+
+  h1, .title-site_h1
+    font-size: $site-h1-size
+
+  h2, .title-site_h2
+    font-size: $site-h2-size
+
+  h3, .title-site_h3
+    font-size: $site-h3-size
+
+  h4, .title-site_h4
+    font-size: $site-h4-size
+
+  h5, .title-site_h5
+    font-size: $site-h5-size
+
+  h6, .title-site_h6
+    font-size: $site-h6-size
+
+  .text-bl
+    max-width: 558px
+    margin-left: auto
+    margin-right: auto
+
+    &__more-width
+      margin: 45px -50px
+
+    h1, .title-site_h1
+      margin-right: -50px
+
+  p
+    margin-bottom: 25px
+/* end media min width 740 pixels */
+
+/* Min width 980 pixels */
+@media only screen and (min-width: 980px)
+  .text-bl
+    &__more-width
+      margin-left: -96px
+      margin-right: -96px
+/* end media min width 980 pixels */
+
+/* ----- END Typography ---------------- */
+
+
+
+
+
+

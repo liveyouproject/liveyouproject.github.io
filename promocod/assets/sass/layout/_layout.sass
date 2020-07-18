@@ -1,0 +1,106 @@
+/* ----- Page structure ---------------- */
+html
+  height: 100%
+
+body
+  min-height: 100%
+  display: flex
+  flex-direction: column
+  min-width: 320px
+  min-height: 100%
+
+.site-wrapper
+  overflow: hidden
+  flex: 1 0 auto
+
+.footer
+  flex-shrink: 0
+
+.section-st
+  padding-top: 80px
+  padding-bottom: 20px
+
+.container
+  padding-left: 15px
+  padding-right: 15px
+
+.hidden-mobile,
+.hidden-devices
+  display: none
+
+.main
+  padding: 50px 0
+
+.section-shine-bottom
+  overflow: hidden
+  background-image: url('../img/shine-ptrn-min.png')
+  background-repeat: no-repeat
+  background-position: 32% 0
+  padding: 58px 10px 46px
+
+
+/* Min width 740 pixels */
+@media only screen and (min-width: 740px)
+  .hidden-tablet
+    display: none
+
+  .hidden-mobile
+    display: block
+
+  .section-shine-bottom
+    padding-top: 100px
+    padding-bottom: 85px
+/* end media min width 740 pixels */
+
+
+/* Min width 960 pixels */
+@media only screen and (min-width: 960px)
+  .section-st
+    padding-top: 120px
+    padding-bottom: 40px
+
+  .container
+    max-width: 1170px
+    margin-left: auto
+    margin-right: auto
+
+  .hidden-devices,
+  .hidden-tablet
+    display: block
+
+  .hidden-desktop
+    display: none
+/* end media min width 960 pixels */
+
+
+/* Min width 1800 pixels */
+@media only screen and (min-width: 1800px)
+  .section-shine-bottom
+    background-size: cover
+
+    .icon-value-inline_line-items
+      margin-left: -60px
+      margin-right: 60px
+/* end media min width 1800 pixels */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

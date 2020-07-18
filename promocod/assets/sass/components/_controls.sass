@@ -1,0 +1,209 @@
+/* ----- Controls styles ----------------- */
+.btn
+  position: relative
+  display: inline-block
+  margin: 0
+  padding: 8px 15px
+  border: none
+
+  text-align: center
+  font: normal normal 14px/24px $site-font-family, Arial, sans-serif
+  text-decoration: none
+
+  color: #fff
+  background-color: $base-color
+  border-radius: 5px
+  outline: none
+  cursor: pointer
+
+  &:hover
+    text-decoration: none
+    color: #fff
+    background-color: lighten($base-color, 5%)
+
+  &_second-st
+    background-color: $second-color
+
+    &:hover
+      background-color: lighten($second-color, 5%)
+
+  &__icon-text
+    display: inline-block
+    vertical-align: middle
+
+  &__icon
+    width: 20px
+    height: 20px
+    display: inline-block
+    vertical-align: middle
+    border: 1px solid #000
+    font-style: normal
+
+    &_right
+      margin-left: 5px
+
+    &_left
+      margin-right: 5px
+
+  &_border
+    border: 2px solid $base-color
+    background: transparent
+    color: #444
+    line-height: 20px
+
+    &:hover
+      color: #fff
+      border-color: lighten($base-color, 5%)
+
+    &.btn_second-st
+      border-color: $second-color
+      color: #444
+
+      &:hover
+        color: #fff
+        border-color: lighten($second-color, 5%)
+
+  &[disabled]
+    cursor: default
+    background-color: rgba(#000, 0.4)
+
+  &_min-width
+    min-width: 110px
+
+  &_max
+    width: 100%
+
+  &_sm
+    padding: 5px 10px
+    font-size: 12px
+
+    &.btn_min-width
+      min-width: 80px
+
+  &_md
+    padding: 16px 25px
+    font-size: 18px
+
+    &.btn_min-width
+      min-width: 140px
+
+  &_lg
+    padding: 22px 30px
+    font-size: 24px
+
+    &.btn_min-width
+      min-width: 180px
+
+
+.placeholder
+  color: #37393A
+
+input,
+textarea
+  +placeholder-color(#37393A)
+
+::-webkit-contacts-auto-fill-button
+  opacity: 0
+
+input[type="password"]::-webkit-contacts-auto-fill-button
+  opacity: 1
+
+input[type="search"]
+  -webkit-appearance: none
+
+.field-item__field input,
+.field-item__field textarea
+  position: relative
+  height: 50px
+  width: 100%
+  padding: 0 15px
+  border: 1px solid rgba(#444, 0.3)
+
+  font: 16px $site-font-family, Arial, sans-serif
+
+  color: #444
+  background-color: #fff
+  outline: none
+  border-radius: 3px
+
+  -webkit-appearance: none
+  box-shadow: none
+
+  &:hover
+    border-color: rgba(#444, 0.4)
+
+  &:focus
+    border-color: rgba(#444, 0.5)
+
+.field-item__field textarea
+  vertical-align: top
+  height: 130px
+  padding: 10px 15px
+  resize: none
+
+
+/* checkbox and radio */
+.form-st-radio,
+.form-st-checkbox
+  position: relative
+  padding-left: 25px
+  font-size: 14px
+  line-height: 24px
+  margin-bottom: 10px
+
+  input
+    width: 0
+    height: 0
+    visibility: hidden
+    position: absolute
+    left: 0
+    top: 0
+
+.fake-control
+  position: absolute
+  left: 0
+  top: 5px
+  width: 14px
+  height: 14px
+  background-color: #fff
+  box-shadow: 0 1px 3px rgba(#000, 0.3)
+
+.form-st-radio
+  .fake-control
+    border-radius: 50%
+
+    &::before
+      content: ''
+      display: none
+      position: absolute
+      left: 15%
+      top: 15%
+      width: 70%
+      height: 70%
+      background-color: $second-color
+      border-radius: 50%
+
+  input:checked + .fake-control
+    &::before
+      display: block
+
+.form-st-checkbox
+  input:checked + .fake-control
+    // background-image: url('../img/check.svg')
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-size: 75% 75%
+/* ----- END controls ------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
