@@ -1,0 +1,176 @@
+.promo
+  background-color: #ebf0ed
+
+  &-item
+    border-radius: 20px
+    background-color: #ffffff
+    display: flex
+    justify-content: space-between
+    margin-bottom: 13px
+
+  &-item__aside
+    flex-shrink: 0
+    width: 70px
+    display: flex
+    align-items: center
+    justify-content: center
+    transform: rotate(-90deg)
+
+    .present
+      width: 36px
+      flex-shrink: 0
+      margin-right: 8px
+      transform: rotate(90deg)
+
+    .price
+      font-size: 30px
+      font-weight: 700
+      line-height: 1
+      letter-spacing: -1.8px
+      margin-right: 8px
+      position: relative
+      bottom: -3px
+
+    .text
+      font-size: 13px
+      line-height: 1
+      color: rgba($site-text-color, .5)
+
+    .discount
+      font-size: 30px
+      font-weight: 700
+      line-height: 1
+      letter-spacing: -1.8px
+      position: relative
+      bottom: -3px
+
+  &-item__info
+    flex-grow: 1
+    padding: 15px
+    border-left: 1px solid rgba(#dfdbce, 0.6)
+
+    p
+      font-size: 14px
+      line-height: 19px
+      margin-bottom: 5px
+      a
+        text-decoration: none
+
+        .icon
+          display: inline-block
+          vertical-align: middle
+          width: 12px
+          height: 6px
+          border: 1px solid #014c33
+          margin-left: 8px
+
+
+  &-title
+    display: block
+    font-size: 16px
+    font-weight: 700
+    line-height: 20px
+    margin-bottom: 5px
+
+  &-info-more
+    font-size: 13px
+    line-height: 22px
+    margin-bottom: 5px
+
+    .used
+      color: #014d34
+
+    .timer
+      color: rgba($site-text-color, .5)
+      display: flex
+      align-items: center
+
+      &__icon
+        border: 1px solid rgba($site-text-color, .5)
+        flex-shrink: 0
+        width: 12px
+        height: 12px
+        margin-right: 6px
+  
+  &-item__btn
+    display: inline-block
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 11px
+    font-weight: 700
+    height: 49px
+    line-height: 49px
+    padding: 0px 20px 
+    background-color: #e5edea
+    border-radius: 11px
+
+@media only screen and (min-width: 740px)
+  .promo
+    &-item
+      padding: 20px 
+
+    &-item__aside
+      width: 165px
+      transform: rotate(0)
+      display: flex
+      flex-direction: column
+
+      .price
+        font-size: 49px
+        margin-right: 0px
+        bottom: 0px
+
+      .discount
+        font-size: 49px
+        bottom: 0px
+      .present
+        width: auto
+        transform: rotate(0)
+        margin-right: 0
+
+      .text
+        font-size: 15px
+
+    &-item__aside_present
+      .text
+        display: none
+
+    &-title
+      font-size: 21px
+      line-height: 22px
+
+    &-info-more
+      .used
+        display: block
+    
+    &-item__btn
+      display: none
+
+    &-item__info
+      padding: 0px 20px
+
+    &-btn
+      text-decoration: none
+      flex-shrink: 0
+      padding: 10px 45px
+      width: 176px
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: #e5edea
+      border-radius: 16px
+      background-image: linear-gradient(-38deg, rgba(229, 237, 234, 0.63) 0%, rgba(177, 199, 192, 0.63) 40%, rgba(255, 255, 255, 0.63) 56%, rgba(177, 199, 192, 0.63) 72%, rgba(229, 237, 234, 0.63) 100%)
+      font-size: 12px
+      font-weight: 700
+      line-height: 19px
+      text-transform: uppercase
+      text-align: center
+      cursor: pointer
+
+@media only screen and (min-width: 960px)
+  .promo
+    &-info-more
+      display: flex
+
+      .used
+        margin-right: 10px
