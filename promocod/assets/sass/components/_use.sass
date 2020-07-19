@@ -110,15 +110,43 @@
       margin: 0px auto 40px
       max-width: 570px
 
-
     &-item
       display: flex
       align-items: center
       width: 100%
       text-align: left
 
+      .title
+        max-width: 200px
+
+    &-item_line
+      position: relative
+      &:before
+        content: ''
+        display: block
+        width: 152px
+        height: 150px
+        background: url('../img/use-line/use-line1.svg') no-repeat 0 0
+        position: absolute
+        right: 60px
+        top: 75px
+
     &-item_img-right
       justify-content: flex-end
+      position: relative
+
+      &:before
+        content: ''
+        display: block
+        width: 144px
+        height: 224px
+        background: url('../img/use-line/use-line2.svg') no-repeat 0 0
+        position: absolute
+        left: -50px
+        top: 170px
+
+      .title
+        margin-left: auto
 
       .use-item__img
         order: 2

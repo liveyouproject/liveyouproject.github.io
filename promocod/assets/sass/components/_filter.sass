@@ -1,0 +1,41 @@
+.filter
+  &__btn
+    width: 100%
+    display: block
+    background-color: #014d34
+    border: 1px solid rgba($light-color, 0.1 )
+    font-size: 15px
+    height: 43px
+    line-height: 43px
+    padding: 0px 20px
+    color: #5c9d87
+    transition: all .3s
+    cursor: pointer
+    margin-top: -1px
+
+    &:focus
+      outline: none
+
+    &:first-child
+      border-radius: 12px 12px 0px 0px
+
+    &:last-child
+      border-radius: 0px 0px 12px 12px
+
+    &:hover
+      border-color: #00402b
+      background-color: #00402b
+      color: #fff
+@media only screen and (min-width: 740px)
+  .filter
+    display: flex
+    &__btn
+      margin-top: 0px
+      margin-right: -1px
+
+      &:first-child
+        border-radius: 12px 0px 0px 12px
+
+      &:last-child
+        margin-right: 0px
+        border-radius: 0px 12px 12px 0px
