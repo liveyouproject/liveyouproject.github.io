@@ -27,4 +27,4 @@ function mobileCarousel() {
 }
 
 mobileCarousel()
-$(window).resize(mobileCarousel)	
+$(window).resize(mobileCarousel)
