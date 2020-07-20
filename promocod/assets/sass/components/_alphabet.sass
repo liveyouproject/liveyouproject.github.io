@@ -1,0 +1,57 @@
+.alphabet
+  &-wrap
+    background-color: #014d34
+
+  &-item
+    display: inline-block
+    text-transform: uppercase
+    font-size: 15px
+    line-height: 1
+    color: $light-color
+    padding: 14px 13.5px 12px
+    border-radius: 12px
+    position: relative
+    cursor: pointer
+    transition: all .3s
+    vertical-align: middle
+
+    &:after
+      content: ''
+      display: block
+      height: 1px
+      width: calc(100% - 10px)
+      background-color: #376755
+      position: absolute
+      left: 50%
+      bottom: 3px
+      transform: translateX(-50%)
+      transition: all .3s
+
+    &:hover
+      color: #ff5ba3
+
+      &:after
+        background-color: #ff5ba3
+  
+  &-item.active
+    background-color: #00402b
+
+    &:after
+      display: none
+
+    &:hover
+      color: #fff
+  
+  &-item.disabled
+    color: #5c9d87
+    cursor: default
+
+    &:after
+      display: none
+
+    &:hover
+      color: #5c9d87
+
+  &-item_all
+    text-transform: none
+    // padding: 14px
